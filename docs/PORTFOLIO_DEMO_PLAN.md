@@ -125,8 +125,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Under ~150 lines; all links valid.
 - Recommended model: opus-4-7 (medium) — writing + positioning
 - Token estimate: ~40k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, commit on `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (high; plan recommended opus-4-7), ~30k tokens
+- Notes: 114 lines, 0 broken relative links. Numeric claims checked against code (7 assets / 35 signals from register_map.json). The 'How this was built, with AI' section states the user's agreed framing — user should review the wording since it speaks in first person. Live-demo link points to a URL that only resolves after Pages is enabled and this branch merges. Video link intentionally omitted until CP-10 produces one.
 
 ### CP-9: Fresh screenshots
 - Goal: Screenshots show the strongest states.
