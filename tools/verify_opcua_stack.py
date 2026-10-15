@@ -27,6 +27,19 @@ def request_json(url, *, data=None, headers=None):
         return json.load(response)
 
 
+def matched_payload(rows, database_row):
+    acked = {r["seq"] for r in rows if r["kind"] == "mqtt_published"}
+    for record in rows:
+        if record["kind"] != "telemetry":
+            continue
+        payload = record["payload"]
+        if payload["seq"] in acked and all(
+            database_row[key] == payload.get(key) for key in database_row
+        ):
+            return payload
+    raise ValueError("No acknowledged candidate exactly matches the stored row")
+
+
 def verify(output):
     output.mkdir(parents=True, exist_ok=False)
     result = {
@@ -49,20 +62,11 @@ def verify(output):
                     "from pathlib import Path; print(''.join(p.read_text() for p in sorted(Path('/evidence').glob('*.jsonl'))))",
                 )
                 rows = [json.loads(line) for line in raw.splitlines() if line.strip()]
-                acked = {r["seq"] for r in rows if r["kind"] == "mqtt_published"}
-                payload = next(
-                    r["payload"]
-                    for r in rows
-                    if r["kind"] == "telemetry"
-                    and r["payload"]["signal"] == "billet_temp_c"
-                    and r["payload"]["seq"] in acked
-                )
                 sql = (
                     "SELECT row_to_json(t) FROM (SELECT asset,signal,value,quality,state,fault_code,seq,"
                     "round(extract(epoch from source_ts)*1000)::bigint AS source_ts,"
                     "round(extract(epoch from ts)*1000)::bigint AS ts FROM telemetry "
-                    f"WHERE asset='furnace-01' AND signal='billet_temp_c' AND seq={int(payload['seq'])} "
-                    f"AND ts=to_timestamp({int(payload['ts'])}/1000.0) LIMIT 1) t"
+                    "WHERE asset='furnace-01' AND signal='billet_temp_c' ORDER BY ts DESC LIMIT 1) t"
                 )
                 row = json.loads(
                     compose(
@@ -79,7 +83,7 @@ def verify(output):
                         sql,
                     )
                 )
-                assert all(row[key] == payload[key] for key in row), (row, payload)
+                payload = matched_payload(rows, row)
                 assert request_json("http://127.0.0.1:8080/health")["status"] == "ok"
                 api_asset = request_json(
                     "http://127.0.0.1:8080/api/v1/assets/furnace-01",
