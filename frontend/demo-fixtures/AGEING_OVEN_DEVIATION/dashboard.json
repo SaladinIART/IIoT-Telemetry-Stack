@@ -37,14 +37,14 @@
   "orders_monitoring": 0,
   "orders_at_risk": 1,
   "orders_delayed": 0,
-  "next_deadline_at": "2026-10-16T17:56:19+00:00",
+  "next_deadline_at": "2026-10-16T18:03:43+00:00",
   "next_deadline_customer": "Automotive Customer B",
   "orders": [
    {
     "id": "PO-AL-2024-0018",
     "customer": "MNC Customer A",
     "quantity_ordered": 2000,
-    "due_at": "2026-10-17T13:56:19+00:00",
+    "due_at": "2026-10-17T14:03:43+00:00",
     "order_value_myr": 84000.0,
     "computed_status": "AT_RISK"
    },
@@ -52,7 +52,7 @@
     "id": "PO-AL-2024-0021",
     "customer": "Automotive Customer B",
     "quantity_ordered": 800,
-    "due_at": "2026-10-16T17:56:19+00:00",
+    "due_at": "2026-10-16T18:03:43+00:00",
     "order_value_myr": 76000.0,
     "computed_status": "ON_TRACK"
    },
@@ -60,7 +60,7 @@
     "id": "PO-AL-2024-0025",
     "customer": "Building Systems Customer C",
     "quantity_ordered": 1500,
-    "due_at": "2026-10-20T13:56:19+00:00",
+    "due_at": "2026-10-20T14:03:43+00:00",
     "order_value_myr": 87000.0,
     "computed_status": "ON_TRACK"
    }
@@ -75,7 +75,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -86,7 +86,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -97,7 +97,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -108,7 +108,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -119,7 +119,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -130,7 +130,7 @@
    "fault_code": 0,
    "cost_rate_myr_hr": 0.0,
    "cost_so_far_myr": 0.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "LOW"
   },
   {
@@ -141,7 +141,7 @@
    "fault_code": 711,
    "cost_rate_myr_hr": 1500.0,
    "cost_so_far_myr": 600.0,
-   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "last_maint_at": "2026-10-06T14:03:43+00:00",
    "pm_risk": "HIGH"
   }
  ]

@@ -1,6 +1,6 @@
 [
  {
-  "ts": "2026-10-15T13:54:21+00:00",
+  "ts": "2026-10-15T14:01:45+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 183.7,
@@ -8,7 +8,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:23+00:00",
+  "ts": "2026-10-15T14:01:47+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 180.61,
@@ -16,7 +16,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:25+00:00",
+  "ts": "2026-10-15T14:01:49+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 180.44,
@@ -24,7 +24,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:27+00:00",
+  "ts": "2026-10-15T14:01:51+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 182.92,
@@ -32,7 +32,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:29+00:00",
+  "ts": "2026-10-15T14:01:53+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 190.71,
@@ -40,7 +40,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:31+00:00",
+  "ts": "2026-10-15T14:01:55+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 188.54,
@@ -48,7 +48,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:33+00:00",
+  "ts": "2026-10-15T14:01:57+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 198.76,
@@ -56,7 +56,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:35+00:00",
+  "ts": "2026-10-15T14:01:59+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 194.87,
@@ -64,7 +64,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:37+00:00",
+  "ts": "2026-10-15T14:02:01+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 194.52,
@@ -72,7 +72,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:39+00:00",
+  "ts": "2026-10-15T14:02:03+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 200.09,
@@ -80,7 +80,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:41+00:00",
+  "ts": "2026-10-15T14:02:05+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 198.19,
@@ -88,7 +88,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:43+00:00",
+  "ts": "2026-10-15T14:02:07+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 196.79,
@@ -96,7 +96,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:45+00:00",
+  "ts": "2026-10-15T14:02:09+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 196.87,
@@ -104,7 +104,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:47+00:00",
+  "ts": "2026-10-15T14:02:11+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 194.72,
@@ -112,7 +112,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:49+00:00",
+  "ts": "2026-10-15T14:02:13+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 197.84,
@@ -120,7 +120,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:51+00:00",
+  "ts": "2026-10-15T14:02:15+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 191.6,
@@ -128,7 +128,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:53+00:00",
+  "ts": "2026-10-15T14:02:17+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 193.58,
@@ -136,7 +136,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:55+00:00",
+  "ts": "2026-10-15T14:02:19+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 199.02,
@@ -144,7 +144,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:57+00:00",
+  "ts": "2026-10-15T14:02:21+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 193.02,
@@ -152,7 +152,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:59+00:00",
+  "ts": "2026-10-15T14:02:23+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 187.38,
@@ -160,7 +160,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:01+00:00",
+  "ts": "2026-10-15T14:02:25+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 186.77,
@@ -168,7 +168,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:03+00:00",
+  "ts": "2026-10-15T14:02:27+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 187.86,
@@ -176,7 +176,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:05+00:00",
+  "ts": "2026-10-15T14:02:29+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 174.31,
@@ -184,7 +184,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:07+00:00",
+  "ts": "2026-10-15T14:02:31+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 176.64,
@@ -192,7 +192,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:09+00:00",
+  "ts": "2026-10-15T14:02:33+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 179.33,
@@ -200,7 +200,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:11+00:00",
+  "ts": "2026-10-15T14:02:35+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 177.19,
@@ -208,7 +208,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:13+00:00",
+  "ts": "2026-10-15T14:02:37+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 166.38,
@@ -216,7 +216,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:15+00:00",
+  "ts": "2026-10-15T14:02:39+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 165.68,
@@ -224,7 +224,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:17+00:00",
+  "ts": "2026-10-15T14:02:41+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 162.97,
@@ -232,7 +232,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:19+00:00",
+  "ts": "2026-10-15T14:02:43+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 163.21,
@@ -240,7 +240,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:21+00:00",
+  "ts": "2026-10-15T14:02:45+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 166.9,
@@ -248,7 +248,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:23+00:00",
+  "ts": "2026-10-15T14:02:47+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 159.11,
@@ -256,7 +256,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:25+00:00",
+  "ts": "2026-10-15T14:02:49+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 160.97,
@@ -264,7 +264,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:27+00:00",
+  "ts": "2026-10-15T14:02:51+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 163.24,
@@ -272,7 +272,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:29+00:00",
+  "ts": "2026-10-15T14:02:53+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 164.22,
@@ -280,7 +280,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:31+00:00",
+  "ts": "2026-10-15T14:02:55+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 159.0,
@@ -288,7 +288,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:33+00:00",
+  "ts": "2026-10-15T14:02:57+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 164.91,
@@ -296,7 +296,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:35+00:00",
+  "ts": "2026-10-15T14:02:59+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 168.05,
@@ -304,7 +304,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:37+00:00",
+  "ts": "2026-10-15T14:03:01+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 166.2,
@@ -312,7 +312,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:39+00:00",
+  "ts": "2026-10-15T14:03:03+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 165.02,
@@ -320,7 +320,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:41+00:00",
+  "ts": "2026-10-15T14:03:05+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 164.89,
@@ -328,7 +328,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:43+00:00",
+  "ts": "2026-10-15T14:03:07+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 175.04,
@@ -336,7 +336,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:45+00:00",
+  "ts": "2026-10-15T14:03:09+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 169.37,
@@ -344,7 +344,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:47+00:00",
+  "ts": "2026-10-15T14:03:11+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 176.59,
@@ -352,7 +352,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:49+00:00",
+  "ts": "2026-10-15T14:03:13+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 184.75,
@@ -360,7 +360,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:51+00:00",
+  "ts": "2026-10-15T14:03:15+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 177.8,
@@ -368,7 +368,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:53+00:00",
+  "ts": "2026-10-15T14:03:17+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 186.34,
@@ -376,7 +376,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:55+00:00",
+  "ts": "2026-10-15T14:03:19+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 184.55,
@@ -384,7 +384,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:57+00:00",
+  "ts": "2026-10-15T14:03:21+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 194.81,
@@ -392,7 +392,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:59+00:00",
+  "ts": "2026-10-15T14:03:23+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 192.25,
@@ -400,7 +400,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:01+00:00",
+  "ts": "2026-10-15T14:03:25+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 196.98,
@@ -408,7 +408,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:03+00:00",
+  "ts": "2026-10-15T14:03:27+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 200.29,
@@ -416,7 +416,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:05+00:00",
+  "ts": "2026-10-15T14:03:29+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 196.54,
@@ -424,7 +424,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:07+00:00",
+  "ts": "2026-10-15T14:03:31+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 200.6,
@@ -432,7 +432,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:09+00:00",
+  "ts": "2026-10-15T14:03:33+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 201.52,
@@ -440,7 +440,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:11+00:00",
+  "ts": "2026-10-15T14:03:35+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 199.93,
@@ -448,7 +448,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:13+00:00",
+  "ts": "2026-10-15T14:03:37+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 194.21,
@@ -456,7 +456,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:15+00:00",
+  "ts": "2026-10-15T14:03:39+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 196.53,
@@ -464,7 +464,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:17+00:00",
+  "ts": "2026-10-15T14:03:41+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 193.53,
@@ -472,7 +472,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:19+00:00",
+  "ts": "2026-10-15T14:03:43+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_force_kn",
   "value": 201.04,
@@ -480,7 +480,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:21+00:00",
+  "ts": "2026-10-15T14:01:45+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.53,
@@ -488,7 +488,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:23+00:00",
+  "ts": "2026-10-15T14:01:47+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.5,
@@ -496,7 +496,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:25+00:00",
+  "ts": "2026-10-15T14:01:49+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.6,
@@ -504,7 +504,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:27+00:00",
+  "ts": "2026-10-15T14:01:51+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.55,
@@ -512,7 +512,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:29+00:00",
+  "ts": "2026-10-15T14:01:53+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.63,
@@ -520,7 +520,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:31+00:00",
+  "ts": "2026-10-15T14:01:55+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.59,
@@ -528,7 +528,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:33+00:00",
+  "ts": "2026-10-15T14:01:57+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.69,
@@ -536,7 +536,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:35+00:00",
+  "ts": "2026-10-15T14:01:59+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.72,
@@ -544,7 +544,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:37+00:00",
+  "ts": "2026-10-15T14:02:01+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.73,
@@ -552,7 +552,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:39+00:00",
+  "ts": "2026-10-15T14:02:03+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.67,
@@ -560,7 +560,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:41+00:00",
+  "ts": "2026-10-15T14:02:05+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.72,
@@ -568,7 +568,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:43+00:00",
+  "ts": "2026-10-15T14:02:07+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.71,
@@ -576,7 +576,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:45+00:00",
+  "ts": "2026-10-15T14:02:09+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.74,
@@ -584,7 +584,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:47+00:00",
+  "ts": "2026-10-15T14:02:11+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.76,
@@ -592,7 +592,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:49+00:00",
+  "ts": "2026-10-15T14:02:13+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.65,
@@ -600,7 +600,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:51+00:00",
+  "ts": "2026-10-15T14:02:15+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.76,
@@ -608,7 +608,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:53+00:00",
+  "ts": "2026-10-15T14:02:17+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.74,
@@ -616,7 +616,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:55+00:00",
+  "ts": "2026-10-15T14:02:19+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.7,
@@ -624,7 +624,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:57+00:00",
+  "ts": "2026-10-15T14:02:21+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.59,
@@ -632,7 +632,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:54:59+00:00",
+  "ts": "2026-10-15T14:02:23+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.59,
@@ -640,7 +640,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:01+00:00",
+  "ts": "2026-10-15T14:02:25+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.5,
@@ -648,7 +648,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:03+00:00",
+  "ts": "2026-10-15T14:02:27+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.58,
@@ -656,7 +656,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:05+00:00",
+  "ts": "2026-10-15T14:02:29+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.5,
@@ -664,7 +664,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:07+00:00",
+  "ts": "2026-10-15T14:02:31+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.42,
@@ -672,7 +672,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:09+00:00",
+  "ts": "2026-10-15T14:02:33+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.44,
@@ -680,7 +680,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:11+00:00",
+  "ts": "2026-10-15T14:02:35+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.42,
@@ -688,7 +688,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:13+00:00",
+  "ts": "2026-10-15T14:02:37+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.36,
@@ -696,7 +696,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:15+00:00",
+  "ts": "2026-10-15T14:02:39+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.34,
@@ -704,7 +704,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:17+00:00",
+  "ts": "2026-10-15T14:02:41+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.35,
@@ -712,7 +712,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:19+00:00",
+  "ts": "2026-10-15T14:02:43+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.35,
@@ -720,7 +720,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:21+00:00",
+  "ts": "2026-10-15T14:02:45+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.24,
@@ -728,7 +728,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:23+00:00",
+  "ts": "2026-10-15T14:02:47+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.34,
@@ -736,7 +736,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:25+00:00",
+  "ts": "2026-10-15T14:02:49+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.33,
@@ -744,7 +744,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:27+00:00",
+  "ts": "2026-10-15T14:02:51+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.25,
@@ -752,7 +752,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:29+00:00",
+  "ts": "2026-10-15T14:02:53+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.22,
@@ -760,7 +760,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:31+00:00",
+  "ts": "2026-10-15T14:02:55+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.28,
@@ -768,7 +768,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:33+00:00",
+  "ts": "2026-10-15T14:02:57+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.33,
@@ -776,7 +776,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:35+00:00",
+  "ts": "2026-10-15T14:02:59+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.32,
@@ -784,7 +784,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:37+00:00",
+  "ts": "2026-10-15T14:03:01+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.26,
@@ -792,7 +792,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:39+00:00",
+  "ts": "2026-10-15T14:03:03+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.33,
@@ -800,7 +800,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:41+00:00",
+  "ts": "2026-10-15T14:03:05+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.35,
@@ -808,7 +808,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:43+00:00",
+  "ts": "2026-10-15T14:03:07+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.41,
@@ -816,7 +816,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:45+00:00",
+  "ts": "2026-10-15T14:03:09+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.47,
@@ -824,7 +824,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:47+00:00",
+  "ts": "2026-10-15T14:03:11+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.45,
@@ -832,7 +832,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:49+00:00",
+  "ts": "2026-10-15T14:03:13+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.48,
@@ -840,7 +840,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:51+00:00",
+  "ts": "2026-10-15T14:03:15+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.54,
@@ -848,7 +848,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:53+00:00",
+  "ts": "2026-10-15T14:03:17+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.54,
@@ -856,7 +856,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:55+00:00",
+  "ts": "2026-10-15T14:03:19+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.53,
@@ -864,7 +864,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:57+00:00",
+  "ts": "2026-10-15T14:03:21+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.58,
@@ -872,7 +872,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:55:59+00:00",
+  "ts": "2026-10-15T14:03:23+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.72,
@@ -880,7 +880,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:01+00:00",
+  "ts": "2026-10-15T14:03:25+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.64,
@@ -888,7 +888,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:03+00:00",
+  "ts": "2026-10-15T14:03:27+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.67,
@@ -896,7 +896,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:05+00:00",
+  "ts": "2026-10-15T14:03:29+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.68,
@@ -904,7 +904,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:07+00:00",
+  "ts": "2026-10-15T14:03:31+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.79,
@@ -912,7 +912,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:09+00:00",
+  "ts": "2026-10-15T14:03:33+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.75,
@@ -920,7 +920,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:11+00:00",
+  "ts": "2026-10-15T14:03:35+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.68,
@@ -928,7 +928,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:13+00:00",
+  "ts": "2026-10-15T14:03:37+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.68,
@@ -936,7 +936,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:15+00:00",
+  "ts": "2026-10-15T14:03:39+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.66,
@@ -944,7 +944,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:17+00:00",
+  "ts": "2026-10-15T14:03:41+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.65,
@@ -952,7 +952,7 @@
   "state": "RUNNING"
  },
  {
-  "ts": "2026-10-15T13:56:19+00:00",
+  "ts": "2026-10-15T14:03:43+00:00",
   "asset": "stretcher-01",
   "signal": "stretch_pct",
   "value": 1.68,

@@ -14,7 +14,7 @@ The hosted demo is a browser-only replay of API output recorded from the real st
 
 | Executive view | Decision board (Grafana) |
 | --- | --- |
-| ![Executive view](docs/windows-demo/screenshots/02-svelte-dashboard.png) | ![Grafana decision board with a quench fault](docs/windows-demo/screenshots/05-quench-fault-active.png) |
+| ![Executive view during a quench fault](docs/demo/screenshots/02-executive-quench-fault.png) | ![Grafana decision board with a quench fault](docs/windows-demo/screenshots/05-quench-fault-active.png) |
 
 ## What it shows
 

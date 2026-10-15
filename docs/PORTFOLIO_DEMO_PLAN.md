@@ -136,8 +136,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Replace `docs/windows-demo/screenshots/*`; captions state "simulated equipment".
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~25k (approx.)
-- Status: todo
-- Model used: —
+- Status: done with caveat — screenshots show PLACEHOLDER data (banner visible in each) until real fixtures are captured; re-run `tools/capture_demo_screenshots.ps1` afterwards
+- Model used: sonnet-5-5 (medium), ~45k tokens
+- Notes: deviated from plan: kept docs/windows-demo/screenshots (real Grafana captures) and added docs/demo/screenshots + a repeatable headless-Edge script. Review of the first pass found (a) placeholder faulted asset showed GOOD instead of BAD — fixed in generator; (b) a REAL defect: sidebar never collapsed on phones — added a mobile layout to +layout.svelte, verified at true 375 px emulation (no horizontal page scroll). Added `?scenario=` deep links (usable from the case study). Added tools/serve_demo.py for Pages-style local preview. Narrow shot is 500 px because headless Chrome enforces a minimum width.
 
 ### CP-10: Video shot list
 - Goal: User can record a 75 s video in one take.

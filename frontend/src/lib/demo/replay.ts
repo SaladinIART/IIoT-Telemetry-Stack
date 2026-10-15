@@ -44,8 +44,23 @@ const TIME_KEYS = new Set([
 
 const STORE_KEY = 'nexus_demo_scenario';
 
+const KNOWN_SCENARIOS = new Set([
+	'NORMAL',
+	'QUALITY_HOLD_QUENCH',
+	'PRESS_BOTTLENECK',
+	'STRETCHER_BACKLOG',
+	'AGEING_OVEN_DEVIATION',
+	'EMERGENCY_PRESS_TRIP',
+]);
+
+/** `?scenario=QUALITY_HOLD_QUENCH` deep-links into a fault state. */
 function restoreScenario(): string {
 	try {
+		const fromUrl = new URLSearchParams(location.search).get('scenario')?.toUpperCase();
+		if (fromUrl && KNOWN_SCENARIOS.has(fromUrl)) {
+			sessionStorage.setItem(STORE_KEY, fromUrl);
+			return fromUrl;
+		}
 		return sessionStorage.getItem(STORE_KEY) || DEFAULT_SCENARIO;
 	} catch {
 		return DEFAULT_SCENARIO;

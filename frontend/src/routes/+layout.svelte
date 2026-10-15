@@ -176,7 +176,31 @@
 
 	.content {
 		flex: 1;
+		min-width: 0;
 		padding: 28px 32px;
 		overflow-y: auto;
+	}
+
+	/* Phones: sidebar becomes a compact top bar with a scrolling nav row. */
+	@media (max-width: 768px) {
+		.layout { flex-direction: column; }
+		.sidebar { width: 100%; min-height: 0; }
+		.logo { padding: 12px 16px; border-bottom: none; }
+		nav {
+			flex-direction: row;
+			overflow-x: auto;
+			padding: 0 8px 8px;
+			flex: none;
+			-webkit-overflow-scrolling: touch;
+		}
+		.nav-item {
+			padding: 8px 12px;
+			white-space: nowrap;
+			border-left: none;
+			border-bottom: 3px solid transparent;
+		}
+		.nav-item.active { border-bottom-color: #818cf8; }
+		.sidebar-footer { display: none; }
+		.content { padding: 16px; }
 	}
 </style>

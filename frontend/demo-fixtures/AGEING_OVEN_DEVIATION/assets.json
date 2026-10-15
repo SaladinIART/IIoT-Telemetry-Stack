@@ -9,7 +9,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -22,7 +22,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -35,7 +35,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -48,7 +48,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -61,7 +61,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -74,7 +74,7 @@
   "state": "RUNNING",
   "fault_code": 0,
   "quality": "GOOD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 0
  },
  {
@@ -87,7 +87,7 @@
   "state": "FAULTED",
   "fault_code": 711,
   "quality": "BAD",
-  "last_seen": "2026-10-15T13:56:19+00:00",
+  "last_seen": "2026-10-15T14:03:43+00:00",
   "open_alert_count": 1
  }
 ]

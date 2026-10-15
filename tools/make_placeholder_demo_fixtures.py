@@ -146,7 +146,7 @@ def build(scenario: str, assets: list[dict], now: datetime, rng: random.Random) 
                         "asset": aid,
                         "signal": sig["tag_id"],
                         "value": round(v, 2),
-                        "quality": "GOOD",
+                        "quality": "BAD" if is_fault else "GOOD",
                         "state": state_name,
                     }
                 )

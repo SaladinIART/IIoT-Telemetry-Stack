@@ -1,6 +1,6 @@
 {
  "source": "placeholder",
- "generated_at": "2026-10-15T13:56:19+00:00",
+ "generated_at": "2026-10-15T14:03:43+00:00",
  "note": "Not captured from the live pipeline; run tools/capture_demo_fixtures.py.",
  "scenarios": [
   {
