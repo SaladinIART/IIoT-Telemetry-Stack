@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "sim" / "modbus_sim"))
 import scenario_state as ss  # noqa: E402
 
-DEFAULT_OUT = ROOT / "frontend" / "static" / "demo-fixtures"
+DEFAULT_OUT = ROOT / "frontend" / "demo-fixtures"
 STATE_NAMES = {0: "IDLE", 1: "STARTUP", 2: "RUNNING", 3: "FAULTED", 4: "MAINTENANCE"}
 COST_RATE = {"press": 4200.0, "quench": 1800.0, "furnace": 2600.0, "ageing": 1500.0}
 ORDERS = [

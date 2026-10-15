@@ -1,3 +1,4 @@
+import * as demo from './demo/replay';
 import type { Alert, Asset, DashboardResponse, KpiSummary, Site, TelemetryPoint } from './types';
 
 const BASE = '/api/v1';
@@ -29,7 +30,7 @@ async function post<T>(path: string, body: unknown): Promise<T> {
 	return resp.json() as Promise<T>;
 }
 
-export const api = {
+const live = {
 	assets: {
 		list: () => get<Asset[]>('/assets'),
 		get: (id: string) => get<Asset>(`/assets/${id}`),
@@ -58,3 +59,25 @@ export const api = {
 		getScenario: () => get<{ scenario: string; health: string; message: string }>('/demo/scenario'),
 	},
 };
+
+/** Browser-replay implementation of the same surface (VITE_DEMO_MODE=true). */
+const replay: typeof live = {
+	assets: {
+		list: () => demo.listAssets(),
+		get: (id) => demo.getAsset(id),
+		telemetry: (id, opts = {}) => demo.getTelemetry(id, opts),
+	},
+	alerts: {
+		list: (opts = {}) => demo.listAlerts(opts),
+		acknowledge: (id) => demo.acknowledge(id),
+	},
+	kpis: { list: () => demo.listKpis() },
+	sites: { list: () => demo.listSites() },
+	dashboard: { get: () => demo.getDashboard() },
+	demo: {
+		setScenario: (name) => demo.setScenario(name),
+		getScenario: () => demo.getScenario(),
+	},
+};
+
+export const api: typeof live = demo.DEMO ? replay : live;

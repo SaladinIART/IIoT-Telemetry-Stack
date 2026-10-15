@@ -1,3 +1,5 @@
+import { DEMO, demoStream } from './demo/replay';
+
 /**
  * Creates a managed SSE connection that automatically reconnects on failure.
  * Returns a cleanup function — call it to close the connection.
@@ -7,6 +9,8 @@ export function connectSSE<T>(
 	onMessage: (data: T) => void,
 	onError?: (err: Event) => void,
 ): () => void {
+	if (DEMO) return demoStream<T>(path, onMessage);
+
 	const apiKey =
 		(typeof localStorage !== 'undefined' && localStorage.getItem('nexus_api_key')) ||
 		'nexus-dev-key-change-me';

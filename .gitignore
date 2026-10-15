@@ -32,3 +32,6 @@ services/api/static/
 tmp_*
 Screenshots/
 .claude/settings.local.json
+
+# Demo-mode build output
+frontend/build-demo/

@@ -28,7 +28,7 @@ SCENARIOS = [
     "AGEING_OVEN_DEVIATION",
     "EMERGENCY_PRESS_TRIP",
 ]
-DEFAULT_OUT = Path(__file__).resolve().parents[1] / "frontend" / "static" / "demo-fixtures"
+DEFAULT_OUT = Path(__file__).resolve().parents[1] / "frontend" / "demo-fixtures"
 DEFAULT_API_KEY = "nexus-dev-key-change-me"  # public demo placeholder, see .env.example
 
 

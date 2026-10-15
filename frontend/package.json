@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+		"build:demo": "node scripts/build-demo.mjs",
+		"preview:demo": "vite preview --outDir build-demo",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "lint": "prettier --check . && eslint ."

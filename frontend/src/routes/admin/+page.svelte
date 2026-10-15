@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { api } from '$lib/api';
+	import { DEMO } from '$lib/demo/replay';
 	import type { Site } from '$lib/types';
 
 	let apiKey = '';
@@ -62,9 +63,11 @@
 <section class="card">
 	<h2>Quick Links</h2>
 	<ul class="links">
+		{#if !DEMO}
 		<li><a href="/docs" target="_blank" rel="noreferrer">API Documentation (Swagger UI)</a></li>
 		<li><a href="/redoc" target="_blank" rel="noreferrer">API Documentation (ReDoc)</a></li>
 		<li><a href="http://localhost:3000" target="_blank" rel="noreferrer">Grafana Operator Dashboards</a></li>
+		{/if}
 	</ul>
 </section>
 

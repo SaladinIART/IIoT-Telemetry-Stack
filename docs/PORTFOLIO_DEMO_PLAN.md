@@ -82,7 +82,7 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
 ### CP-5: Fixture capture script + real captures
 - Goal: Record real API output for every scenario.
 - Acceptance criteria:
-  - `tools/capture_demo_fixtures.py`: for each of 6 scenarios → POST `/demo/scenario/{name}`, wait for pipeline settle, GET `/dashboard`, `/assets`, `/alerts`, `/kpis`, `/sites`, per-asset telemetry → `frontend/static/demo-fixtures/<scenario>/*.json` + `manifest.json` (capture time, git SHA, stack versions).
+  - `tools/capture_demo_fixtures.py`: for each of 6 scenarios → POST `/demo/scenario/{name}`, wait for pipeline settle, GET `/dashboard`, `/assets`, `/alerts`, `/kpis`, `/sites`, per-asset telemetry → `frontend/demo-fixtures/<scenario>/*.json` + `manifest.json` (capture time, git SHA, stack versions).
   - **User runs Docker stack once** (`docker` is not on PATH in Claude's shell); script runs end to end.
   - Fixtures < 2 MB total; no secrets.
 - Recommended model: sonnet-4-6 (medium)
@@ -102,8 +102,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Manual browser check: all 6 scenarios, all routes, mobile width.
 - Recommended model: sonnet-4-6 (high)
 - Token estimate: ~80k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, commit on `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (high), ~70k tokens
+- Notes: fixtures live in `frontend/demo-fixtures/` (NOT `static/`) so the Docker build doesn't ship them; `scripts/build-demo.mjs` copies them into `build-demo/`. Verified in a real browser under a `/IIoT-Telemetry-Stack/` sub-path with a Pages-style 404 fallback: all 6 routes load, scenario switch updates dashboard/alerts badge, scenario persists across reload (sessionStorage), `svelte-check` 0 errors, normal build unchanged. Banner reads manifest: shows 'Sample data' warning until fixtures are `source: captured`. Mobile width not yet checked. Caveat: on Windows Git Bash set `MSYS_NO_PATHCONV=1` when passing BASE_PATH.
 
 ### CP-7: GitHub Pages deploy
 - Goal: Demo live at `https://salbotics.uk/IIoT-Telemetry-Stack/`.
