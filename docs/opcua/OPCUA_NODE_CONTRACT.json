@@ -1,6 +1,6 @@
 {
   "contract_version": 1,
-  "status": "IMPLEMENTED_LOCAL_PROTOCOL_TESTS_FULL_STACK_PENDING",
+  "status": "IMPLEMENTED_VERIFIED_LOCAL_AND_REMOTE_CI",
   "evidence_label": "Requirement",
   "date": "2026-10-15",
   "source_revision": "fb430f567cd7a7b4b1f8a0bec3e341741b8d97d5",
@@ -114,5 +114,6 @@
     "fault_code": "Preserve valid UInt16 equipment code, including unknown codes in diagnostics; do not turn transport failure into equipment fault 999",
     "snapshot_consistency": "No atomic snapshot claim; stage until required metadata validated and acquisition progress observed"
   },
-  "source_hashes_purpose": "Historical U01 inputs at fb430f5; current runtime hashes are in retained run-02 manifest"
+  "source_hashes_purpose": "Historical U01 inputs at fb430f5; current runtime hashes are in retained run-02 manifest",
+  "verification": "https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129"
 }

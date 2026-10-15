@@ -25,16 +25,16 @@ All rows use Codex directly. Exact session model variant and actual token usage 
 | M05 | Source freshness (U05) | Steady accepted; frozen rejected; post-connection progress required | Codex | 1-3k | PASS local tests and retained runs | Codex |
 | M06 | OPC UA recovery (U06) | Real server restart; new subscription and accepted samples after recovery | Codex | 1-3k | PASS local integration | Codex |
 | M07 | MQTT bridge (U07) | Real broker receives v2; outage publication fails; recovery gets PUBACK | Codex | 2-4k | PASS local integration | Codex |
-| M08 | Opt-in operator pipeline (U08) | Single collector overlay; exact payload-to-DB/Grafana trace and API check | Codex | 2-4k | CONFIGURED; CI verification pending | Codex |
-| M09 | Condition report (U09) | Six separate-process runs, raw evidence, hashes and bounded conclusions | Codex | 2-4k | Prepared; final review pending | Codex |
-| M10 | Public documentation (U10) | Canonical README, guide, wiki sources, accurate About metadata | Codex | 2-4k | Prepared; publication pending | Codex |
-| M11 | Regression verification | Existing unit baseline; new local tests; lint/format; actual CI recorded | Codex | 1-3k | Local tests pass; final CI pending | Codex |
-| M12 | Publish authorized batch | Canonical main updated without force; wiki/About verified; source remains intact | Codex | 1-2k | Pending | Codex |
+| M08 | Opt-in operator pipeline (U08) | Single collector overlay; exact payload-to-DB/Grafana trace and API check | Codex | 2-4k | COMPLETE; PASS remote CI | Codex |
+| M09 | Condition report (U09) | Six separate-process runs, raw evidence, hashes and bounded conclusions | Codex | 2-4k | COMPLETE; original failures retained | Codex |
+| M10 | Public documentation (U10) | Canonical README, guide, wiki sources, accurate About metadata | Codex | 2-4k | COMPLETE; README/About/wiki published | Codex |
+| M11 | Regression verification | Existing unit baseline; new local tests; lint/format; actual CI recorded | Codex | 1-3k | COMPLETE; 62 local tests and all CI jobs pass | Codex |
+| M12 | Publish authorized batch | Canonical main updated without force; wiki/About verified; source remains intact | Codex | 1-2k | COMPLETE; final evidence closeout | Codex |
 
 ## Boundaries and remaining learning
 
-Read-only simulated furnace, no physical hardware or actuation. Custom information model, no certification/companion specification claim. No atomic cross-node snapshot, durable backlog, lossless delivery or production security claim. Unsecured UA restricted to loopback. Docker unavailable locally: remote stack acceptance must reference an actual successful CI result, not a configuration inspection.
+Read-only simulated furnace, no physical hardware or actuation. Custom information model, no certification/companion specification claim. No atomic cross-node snapshot, durable backlog, lossless delivery or production security claim. Unsecured UA restricted to loopback. Docker unavailable locally; actual remote stack acceptance: [CI 38737854129](https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129), commit `a9cc81b55d7f15e651048fbb545d3bfb5f41a59c`. Earlier collection/verifier failures and corrections are preserved in the condition report. B08 probe JSON was independently reproduced unchanged after lint cleanup.
 
 Source quality, freshness and equipment state are separate. Legacy Modbus quality semantics remain as documented in B08; the new OPC UA adapter does not silently rewrite that baseline. The user still needs to explain the retained cases personally; this is not assessed by automated tests.
 
-Next-step model recommendation: current Codex session for remaining batch verification/publication. Further security, physical PLC trials and user interview practice need separately scoped follow-up checkpoints.
+Next-step model recommendation: current Codex session for a separate learner explanation/interview checkpoint when requested (estimated 1-3k tokens). Implementation batch is complete; do not start further security, physical PLC trials or competency assessment automatically. Actual token expenditure for this batch was unavailable.

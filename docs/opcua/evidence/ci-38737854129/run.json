@@ -1,0 +1,27 @@
+{
+  "databaseId": 38737854129,
+  "url": "https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129",
+  "headSha": "a9cc81b55d7f15e651048fbb545d3bfb5f41a59c",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "OPC UA Stack Trace",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129/job/116431626013"
+    },
+    {
+      "name": "Frontend Build",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129/job/116431626420"
+    },
+    {
+      "name": "Lint + Unit Tests",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/runs/38737854129/job/116431626437"
+    }
+  ]
+}

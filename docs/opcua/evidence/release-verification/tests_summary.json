@@ -1,0 +1,320 @@
+{
+  "provenance": "Derived from actual tmp/final-tests-03.xml; local hostname omitted; original retained locally",
+  "tests": 62,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 40.615,
+  "cases": [
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_threshold_fires_warn_low",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_threshold_fires_crit_high",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_threshold_crit_takes_priority_over_warn",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_threshold_no_alert_within_bounds",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_threshold_no_rule_no_alert",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_bad_quality_skipped",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_stale_quality_skipped",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_statistical_no_alert_too_few_samples",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_statistical_fires_on_spike",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_statistical_no_alert_normal_variation",
+      "seconds": 0.002
+    },
+    {
+      "suite": "tests.unit.test_detector",
+      "name": "test_ml_cold_start_no_alert",
+      "seconds": 0.002
+    },
+    {
+      "suite": "tests.unit.test_ingestor",
+      "name": "test_ingestor_buffers_valid_messages",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_ingestor",
+      "name": "test_ingestor_drops_invalid_messages",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_ingestor",
+      "name": "test_ingestor_buffers_event_messages",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_ingestor",
+      "name": "test_flush_if_due_writes_batch",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_ingestor",
+      "name": "test_flush_if_due_writes_event_batch",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_good_steady_value_preserves_source_time_and_schema",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_non_good_is_rejected[2156658688]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_non_good_is_rejected[1083375616]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_non_finite_rejected[nan]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_non_finite_rejected[inf]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_non_finite_rejected[-inf]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_invalid_timestamp_rejected[None]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_invalid_timestamp_rejected[timestamp1]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_invalid_timestamp_rejected[timestamp2]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_wrong_type_unknown_state_and_missing_node_rejected",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_equipment_fault_can_have_good_data",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_freshness_requires_progress_and_expires_on_sequence_not_value",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_unsecured_non_loopback_or_credentials_rejected[opc.tcp://0.0.0.0:4840/]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_unsecured_non_loopback_or_credentials_rejected[opc.tcp://192.168.1.2:4840/]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_unsecured_non_loopback_or_credentials_rejected[http://127.0.0.1:4840/]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_adapter",
+      "name": "test_unsecured_non_loopback_or_credentials_rejected[opc.tcp://admin:password@localhost:4840/]",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_stack_verifier",
+      "name": "test_trace_survives_startup_gap_and_unflushed_latest_sample",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_opcua_stack_verifier",
+      "name": "test_trace_rejects_missing_ack_and_wrong_timestamp",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_dedup_suppresses_second_alert_within_window",
+      "seconds": 0.002
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_dedup_allows_alert_after_window_expires",
+      "seconds": 0.054
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_dedup_different_signal_not_suppressed",
+      "seconds": 0.004
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_dedup_different_alert_type_not_suppressed",
+      "seconds": 0.003
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_value_in_bounds_no_limits",
+      "seconds": 0.0
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_value_in_bounds_within_warn",
+      "seconds": 0.0
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_value_out_of_bounds_crit_high",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_value_out_of_bounds_warn_low",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_router",
+      "name": "test_value_exactly_at_boundary_not_triggered",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_build_topic_and_parse_topic_round_trip",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_parse_topic_rejects_invalid_shape",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_event_topic_round_trip",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_decode_uint32_words",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_decode_uint16_words",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_decode_float32_words",
+      "seconds": 0.0
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_apply_scaling",
+      "seconds": 0.0
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_build_payload_matches_schema",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_build_payload_rejects_invalid_quality",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.unit.test_telemetry",
+      "name": "test_build_event_payload_matches_schema",
+      "seconds": 0.001
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_browse_types_units_read_and_rejected_write",
+      "seconds": 2.89
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[normal]",
+      "seconds": 4.052
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[steady]",
+      "seconds": 4.05
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[frozen]",
+      "seconds": 4.043
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[bad]",
+      "seconds": 4.048
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[uncertain]",
+      "seconds": 4.091
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_subscription_scenarios[process-fault]",
+      "seconds": 4.084
+    },
+    {
+      "suite": "tests.integration.test_opcua_local",
+      "name": "test_reconnect_after_server_restart",
+      "seconds": 8.356
+    },
+    {
+      "suite": "tests.integration.test_opcua_mqtt",
+      "name": "test_real_opcua_to_mqtt_and_broker_recovery",
+      "seconds": 4.173
+    }
+  ]
+}

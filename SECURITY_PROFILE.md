@@ -1,7 +1,7 @@
 ---
-project_name: "salbotics iiot stack"
+project_name: "NEXUS — IIoT-Telemetry-Stack"
 owner: "Maintainer"
-visibility_intent: "planned_public"
+visibility_intent: "public"
 security_mode: "public"
 secret_storage_location: "Use central security-safe storage only"
 rotation_policy: "public_secret"

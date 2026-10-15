@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-15T12:48:33.872607+00:00",
+  "status": "FAIL",
+  "equipment": "Simulated",
+  "checks": {},
+  "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+}

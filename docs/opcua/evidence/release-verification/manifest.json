@@ -1,0 +1,8 @@
+{
+  "description": "Actual release local tests; original JUnit is local; public summary omits host metadata",
+  "files": {
+    "mqtt.jsonl": "a9ca7c4448fa1f084692396ee958225488050a3603bafe4dc4ff1fc11511f31c",
+    "reconnect.jsonl": "eeda762396c12f5455931b1b8dc94b5d82dc86ef370f87c51497291bfa804b8c",
+    "tests_summary.json": "81b80373b945e6a29534f398a615cde5c25f6e824f66f533384c204d243f0fe3"
+  }
+}

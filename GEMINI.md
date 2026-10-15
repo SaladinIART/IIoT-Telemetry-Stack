@@ -7,9 +7,10 @@
 - Read `docs/opcua/CONSOLIDATION_PLAN.md`, `OPCUA_GUIDE.md`, `CONDITION_ASSESSMENT.md` for current scope/status. Historical U01 dispatch is superseded for this batch.
 - Source `99f4404` was an ancestor of imported `fb430f5`; history fast-forwarded on `codex/nexus-opcua-consolidation`. No new Svelte work. Existing Python lint/format cleanup only outside the new extension.
 - Implemented typed read-only loopback server, browse/read/subscriptions, DataValue guards, acquisition-sequence freshness, reconnect and bounded MQTT bridge. Raw diagnostics stay separate from existing v2 schema. No physical data/commissioning, calibrated digital twin, production security or lossless/atomic-snapshot claim.
-- Six retained separate-process experiments pass. Local unit + OPC UA/MQTT tests pass. Full stack verification is configured in CI; local Docker unavailable. Do not claim a passing remote stack until its actual result is recorded in the report.
+- COMPLETE: six retained separate-process experiments, 62 local tests, lint/format, and all three jobs of CI 38737854129 pass. Full stack trace verified on GitHub's Docker runner; local Docker unavailable. Original failed CI evidence/corrections retained; B08 probe reproduced unchanged.
 - Wiki sources live in `docs/wiki/`; initialize wiki via browser once, then update its Git repository. About metadata should name NEXUS and OPC UA without production claims.
 - Model used: Codex, exact variant unavailable. Actual token expenditure unavailable; checkpoint estimates are in the master list.
+- README/About and five-page wiki published. Runtime tested at `a9cc81b55d7f15e651048fbb545d3bfb5f41a59c`; subsequent closeout changes are documentation/evidence only. Canonical U02-U10 functionality is covered by this completed batch; old one-CP Claude dispatch must not restart it. Stop; learner explanation/security/hardware are future separately authorized work.
 
 ## B08 review - 15 October 2026
 

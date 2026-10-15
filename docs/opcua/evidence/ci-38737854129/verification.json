@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-15T12:52:33.630605+00:00",
+  "status": "PASS",
+  "equipment": "Simulated",
+  "checks": {
+    "opcua_subscription": true,
+    "mqtt_puback": true,
+    "database_exact_row": true,
+    "api_asset": true,
+    "grafana_datasource_exact_value": true,
+    "grafana_dashboard_provisioned": true
+  },
+  "payload": {
+    "v": 2,
+    "ts": 1792068758476,
+    "source_ts": 1792068758449,
+    "asset": "furnace-01",
+    "signal": "billet_temp_c",
+    "value": 571.6939274201851,
+    "quality": "good",
+    "seq": 5,
+    "state": "RUNNING",
+    "fault_code": 0,
+    "unit": "degC",
+    "limits": {
+      "warn_low": 540.0,
+      "warn_high": 600.0
+    }
+  },
+  "database_row": {
+    "asset": "furnace-01",
+    "signal": "billet_temp_c",
+    "value": 571.6939274201851,
+    "quality": "good",
+    "state": "RUNNING",
+    "fault_code": 0,
+    "seq": 5,
+    "source_ts": 1792068758449,
+    "ts": 1792068758476
+  },
+  "api_asset": {
+    "asset": "furnace-01",
+    "display_name": "Homogenisation Furnace",
+    "asset_type": "furnace",
+    "site": "demo-site",
+    "line_name": "aluminium-profile-line-1",
+    "cell_name": "extrusion-cell-a",
+    "state": "RUNNING",
+    "fault_code": 0,
+    "quality": "good",
+    "last_seen": "2026-10-15T12:52:38.477000Z",
+    "open_alert_count": 0
+  }
+}
