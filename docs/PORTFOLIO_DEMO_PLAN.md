@@ -114,8 +114,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Deep links and refresh work (404.html fallback).
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~30k (approx.)
-- Status: todo
-- Model used: —
+- Status: done in repo; NOT yet live — needs one-time Pages enablement + merge to main
+- Model used: sonnet-5-5 (low), ~12k tokens
+- Notes: `.github/workflows/demo-pages.yml` (checkout v4, setup-node v4, configure-pages v5, upload-pages-artifact v3, deploy-pages v4 — same versions as the website repo). CI Frontend Build job now also runs `svelte-check` and `build:demo` with BASE_PATH so PRs catch demo breakage. Repo Pages is currently NOT enabled (API returned 404). To go live: Settings > Pages > Source = GitHub Actions (or `gh api -X POST repos/SaladinIART/IIoT-Telemetry-Stack/pages -f build_type=workflow`), then merge to main. Expected URL https://salbotics.uk/IIoT-Telemetry-Stack/ — unverified until first deploy. Deploying placeholders is visibly labelled by the banner.
 
 ### CP-8: README rewrite
 - Goal: 10-second pitch for non-engineers, depth for engineers.
