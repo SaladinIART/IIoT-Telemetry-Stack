@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 63.27,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 64.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 66.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 64.54,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 65.74,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 65.41,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.86,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 67.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 68.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 71.11,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 71.29,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 70.12,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 68.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.42,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 70.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 70.18,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 67.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 65.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 66.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 62.5,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 62.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 60.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 62.58,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 61.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 60.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 59.95,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 55.49,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 57.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 54.9,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 55.11,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 56.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 53.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 56.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 55.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 57.5,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 56.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 56.55,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 55.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 55.49,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 60.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 57.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 61.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 62.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 60.29,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 64.42,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 66.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 64.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 66.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 66.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 70.17,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 68.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 71.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 70.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 71.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.41,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 68.14,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 68.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "cooling-01",
+  "signal": "table_temp_c",
+  "value": 69.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.73,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.32,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.89,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.52,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.51,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.99,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.18,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.69,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.99,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.55,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.42,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.62,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.98,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.69,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.01,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 6.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.37,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.09,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.0,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.41,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 7.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.09,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.38,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.4,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.21,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.0,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.14,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.08,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.66,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.21,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 8.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "cooling-01",
+  "signal": "conveyor_speed_m_min",
+  "value": 9.03,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ }
+]

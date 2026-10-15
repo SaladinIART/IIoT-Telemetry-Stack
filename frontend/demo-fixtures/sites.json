@@ -1,0 +1,9 @@
+[
+ {
+  "site_id": "demo-site",
+  "display_name": "Demo Aluminium Plant",
+  "location": "Simulated",
+  "timezone": "Asia/Kuala_Lumpur",
+  "active": true
+ }
+]

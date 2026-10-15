@@ -1,0 +1,25 @@
+{
+ "source": "placeholder",
+ "generated_at": "2026-10-15T14:03:43+00:00",
+ "note": "Not captured from the live pipeline; run tools/capture_demo_fixtures.py.",
+ "scenarios": [
+  {
+   "scenario": "NORMAL"
+  },
+  {
+   "scenario": "QUALITY_HOLD_QUENCH"
+  },
+  {
+   "scenario": "PRESS_BOTTLENECK"
+  },
+  {
+   "scenario": "STRETCHER_BACKLOG"
+  },
+  {
+   "scenario": "AGEING_OVEN_DEVIATION"
+  },
+  {
+   "scenario": "EMERGENCY_PRESS_TRIP"
+  }
+ ]
+}

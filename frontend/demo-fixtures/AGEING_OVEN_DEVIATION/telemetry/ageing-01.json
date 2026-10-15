@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 183.68,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 182.1,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 182.66,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 183.15,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 184.99,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 184.64,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 186.27,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 185.23,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 185.35,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 186.91,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 187.19,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 185.8,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 186.48,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 185.53,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 187.47,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 187.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 186.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 185.02,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 184.09,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 183.58,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 184.09,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 182.81,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 182.32,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 183.05,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 181.47,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 181.8,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 179.02,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 180.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 179.07,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 179.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 177.49,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 178.81,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 178.07,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 178.1,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 177.19,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 179.55,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 178.77,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 180.16,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 178.9,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 180.76,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 180.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 195.69,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 196.39,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 197.08,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 197.78,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 198.47,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 199.17,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 199.86,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 200.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 201.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 201.94,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 202.64,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 203.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 204.03,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 204.72,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 205.42,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 206.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 206.81,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 207.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_temp_c",
+  "value": 208.19,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 480.6,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 482.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 483.65,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 481.27,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 482.91,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 484.91,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 486.52,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 483.77,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 487.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 486.83,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 487.14,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 487.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 485.99,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 485.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 486.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 484.84,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 484.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 482.94,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 484.12,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 483.64,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 481.99,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 482.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 478.65,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 477.2,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 478.71,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 475.93,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 476.63,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 475.83,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 474.86,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 473.4,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 473.26,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 474.32,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 473.19,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 474.31,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 473.94,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 472.08,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 472.63,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 475.58,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 475.59,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 474.97,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 474.61,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 501.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 502.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 503.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 504.44,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 505.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 506.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 507.78,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 508.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 510.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 511.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 512.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 513.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 514.44,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 515.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 516.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 517.78,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 518.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 520.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "ageing-01",
+  "signal": "oven_dwell_min",
+  "value": 521.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ }
+]

@@ -43,7 +43,7 @@ Machine-readable results: `CP1_EVIDENCE.json` in this directory. Existing unit t
 .\.venv\Scripts\python.exe -m pytest tests/unit -q --junitxml=tmp/cp1-unit.xml
 ```
 
-The evidence file records the exact scenario probe source, observations, source-file hashes, dependency versions and test output. Historical reports under `docs/recovery` remain historical; they are not substituted for a fresh full-stack result.
+The evidence file records the exact scenario probe source, observations, source-file hashes, dependency versions and test output. Historical reports under `docs/archive/recovery` remain historical; they are not substituted for a fresh full-stack result.
 
 ## Findings to resolve before expanding the project
 

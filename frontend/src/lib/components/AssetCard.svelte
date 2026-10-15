@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { Asset } from '$lib/types';
 	import AlertBadge from './AlertBadge.svelte';
 	import StatusPill from './StatusPill.svelte';
@@ -6,7 +7,7 @@
 	export let asset: Asset;
 </script>
 
-<a class="card" href="/assets/{asset.asset}">
+<a class="card" href="{base}/assets/{asset.asset}">
 	<div class="card-header">
 		<span class="asset-name">{asset.display_name}</span>
 		<AlertBadge count={asset.open_alert_count} severity="warning" />

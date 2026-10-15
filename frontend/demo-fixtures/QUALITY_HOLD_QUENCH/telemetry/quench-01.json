@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 223.59,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 218.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 226.7,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.7,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.88,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 233.47,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.52,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.19,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 233.68,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 233.37,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 234.37,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 234.06,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 233.51,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 232.96,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.44,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.13,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 224.09,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 226.08,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 220.71,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 225.87,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 220.58,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 220.96,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 219.18,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 216.45,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 211.31,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 212.05,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.6,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.28,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 208.49,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 204.35,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.55,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 209.17,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.84,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 205.61,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.77,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 208.68,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 208.87,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 208.43,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 211.49,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 262.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 264.44,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 266.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 268.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 271.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 273.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 275.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 277.78,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 280.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 282.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 284.44,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 286.67,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 288.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 291.11,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 293.33,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 295.56,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 297.78,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 300.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 302.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 55.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 59.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.29,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.69,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.05,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.72,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 61.48,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.49,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.91,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.31,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.96,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 66.89,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.41,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.87,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.79,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.99,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.03,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 61.97,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.29,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 59.42,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.06,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 59.47,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 59.31,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.02,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 55.24,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 53.08,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.57,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.37,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.52,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.1,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 49.29,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 49.95,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 52.22,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 48.73,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.73,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.27,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 48.92,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.04,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 49.68,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.55,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 54.79,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 81.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 82.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 83.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 85.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 86.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 87.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 88.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 90.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 91.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 92.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 93.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 95.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 96.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 97.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 98.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 100.0,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 101.25,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 102.5,
+  "quality": "BAD",
+  "state": "FAULTED"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 103.75,
+  "quality": "BAD",
+  "state": "FAULTED"
+ }
+]

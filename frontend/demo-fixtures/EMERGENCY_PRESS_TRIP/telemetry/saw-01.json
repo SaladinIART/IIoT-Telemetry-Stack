@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1151.37,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1111.71,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1184.52,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1150.7,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1204.88,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1205.53,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1209.65,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1243.89,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1251.79,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1279.46,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1223.65,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1288.49,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1251.05,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1282.41,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1244.36,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1249.03,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1217.71,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1227.36,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1163.31,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1180.8,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1166.84,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1150.86,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1094.64,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1061.05,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1122.04,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1078.56,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1014.91,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 996.81,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1023.97,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1031.88,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1012.11,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 958.25,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 959.49,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1009.47,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 967.38,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1022.71,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1018.53,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1038.79,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 988.22,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1067.77,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1035.31,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1062.18,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1101.5,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1113.63,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1158.2,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1147.68,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1154.64,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1176.76,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1227.57,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1243.78,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1225.72,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1265.38,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1202.32,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1239.36,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1215.25,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1270.68,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1243.17,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1208.91,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1237.75,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "saw-01",
+  "signal": "blade_rpm",
+  "value": 1258.05,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:45+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.19,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:47+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.55,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:49+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.41,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:51+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.01,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:53+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.51,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:55+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.77,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:57+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.69,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:01:59+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.15,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:01+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.91,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:03+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:05+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.4,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:07+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.58,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:09+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:11+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.78,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:13+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.19,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:15+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.06,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:17+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.1,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:19+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.49,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:21+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.91,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:23+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.93,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:25+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.73,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:27+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.25,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:29+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.07,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:31+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.4,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:33+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.01,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:35+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.44,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:37+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.4,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:39+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.76,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:41+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.6,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:43+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.87,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:45+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.69,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:47+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.85,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:49+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.39,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:51+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.34,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:53+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.21,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:55+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.73,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:57+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.29,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:02:59+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.43,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:01+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -1.22,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:03+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.72,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:05+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.52,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:07+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.21,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:09+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.93,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:11+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.17,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:13+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.03,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:15+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": -0.03,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:17+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.38,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:19+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 0.29,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:21+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.08,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:23+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.43,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:25+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.04,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:27+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.16,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:29+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.32,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:31+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.23,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:33+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 2.12,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:35+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.69,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:37+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:39+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.77,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:41+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.81,
+  "quality": "GOOD",
+  "state": "IDLE"
+ },
+ {
+  "ts": "2026-10-15T14:03:43+00:00",
+  "asset": "saw-01",
+  "signal": "cut_length_dev_mm",
+  "value": 1.43,
+  "quality": "GOOD",
+  "state": "IDLE"
+ }
+]

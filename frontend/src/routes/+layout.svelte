@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	import { api } from '$lib/api';
 	import { connectSSE } from '$lib/sse';
 	import { assetMap, openAlerts } from '$lib/stores';
+	import DemoBanner from '$lib/components/DemoBanner.svelte';
+	import { DEMO, onScenarioChange } from '$lib/demo/replay';
 	import type { Alert, Asset, TelemetryPoint } from '$lib/types';
 
 	const nav = [
@@ -15,11 +18,11 @@
 		{ href: '/admin',     label: 'Admin',          icon: '⚙️'  },
 	];
 
+	let cleanupScenario: (() => void) | null = null;
 	let cleanupTelemetry: (() => void) | null = null;
 	let cleanupAlerts: (() => void) | null = null;
 
-	onMount(async () => {
-		// Seed asset map from REST on load
+	async function seedAssets() {
 		try {
 			const assets = await api.assets.list();
 			assetMap.update((m) => {
@@ -27,6 +30,13 @@
 				return new Map(m);
 			});
 		} catch { /* ignore during dev without backend */ }
+	}
+
+	onMount(async () => {
+		// Seed asset map from REST on load
+		await seedAssets();
+		// Demo replay: a scenario switch changes fault codes, not just telemetry
+		if (DEMO) cleanupScenario = onScenarioChange(() => void seedAssets());
 
 		// SSE: update asset last_seen + quality from live telemetry
 		cleanupTelemetry = connectSSE<TelemetryPoint>('telemetry', (point) => {
@@ -59,13 +69,18 @@
 	});
 
 	onDestroy(() => {
+		cleanupScenario?.();
 		cleanupTelemetry?.();
 		cleanupAlerts?.();
 	});
 
+	$: path = $page.url.pathname.startsWith(base) ? $page.url.pathname.slice(base.length) || '/' : $page.url.pathname;
 	$: openCount = $openAlerts.filter((a) => a.state === 'OPEN').length;
 </script>
 
+{#if DEMO}
+	<DemoBanner />
+{/if}
 <div class="layout">
 	<aside class="sidebar">
 		<div class="logo">
@@ -76,8 +91,8 @@
 			{#each nav as item}
 				<a
 					class="nav-item"
-					class:active={item.href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(item.href)}
-					href={item.href}
+					class:active={item.href === '/' ? path === '/' : path.startsWith(item.href)}
+					href={`${base}${item.href}`}
 				>
 					<span class="nav-icon">{item.icon}</span>
 					<span class="nav-label">{item.label}</span>
@@ -161,7 +176,31 @@
 
 	.content {
 		flex: 1;
+		min-width: 0;
 		padding: 28px 32px;
 		overflow-y: auto;
+	}
+
+	/* Phones: sidebar becomes a compact top bar with a scrolling nav row. */
+	@media (max-width: 768px) {
+		.layout { flex-direction: column; }
+		.sidebar { width: 100%; min-height: 0; }
+		.logo { padding: 12px 16px; border-bottom: none; }
+		nav {
+			flex-direction: row;
+			overflow-x: auto;
+			padding: 0 8px 8px;
+			flex: none;
+			-webkit-overflow-scrolling: touch;
+		}
+		.nav-item {
+			padding: 8px 12px;
+			white-space: nowrap;
+			border-left: none;
+			border-bottom: 3px solid transparent;
+		}
+		.nav-item.active { border-bottom-color: #818cf8; }
+		.sidebar-footer { display: none; }
+		.content { padding: 16px; }
 	}
 </style>

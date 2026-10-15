@@ -7,8 +7,8 @@ fakes. No network, broker, Docker, database or hardware is used, so this is
 COMPONENT evidence for the collector only, not an end-to-end result.
 
 Usage (project venv, from repository root):
-    .venv/Scripts/python.exe docs/career-readiness/b08_collector_probe.py \
-        --output docs/career-readiness/b08/collector_probe.json
+    .venv/Scripts/python.exe docs/archive/career-readiness/b08_collector_probe.py \
+        --output docs/archive/career-readiness/b08/collector_probe.json
 
 The output path must not exist.
 """

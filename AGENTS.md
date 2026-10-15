@@ -6,7 +6,7 @@ Canonical NEXUS repository: `SaladinIART/IIoT-Telemetry-Stack`. NEXUS is the pro
 
 This project follows the global Codex workflow in `C:\Users\salbot01\.codex\AGENTS.md`.
 
-> **Stack:** Preset **P3 — IIoT/OT Pipeline** — canonical NEXUS flagship. Canonical pins + conventions: [`..\STACK-STANDARD.md`](../STACK-STANDARD.md). Svelte frontend = frozen-legacy (do not expand). Duplicate at `founder-hub\nexus-iiot-platform` is slated for retirement.
+> **Stack:** Preset **P3 — IIoT/OT Pipeline** — canonical NEXUS flagship. Canonical pins + conventions: [`..\STACK-STANDARD.md`](../STACK-STANDARD.md). Svelte frontend = frozen-legacy (do not expand) EXCEPT the browser-only demo mode (`VITE_DEMO_MODE`, `frontend/src/lib/demo/`, `npm run build:demo`) added for the salbotics.uk portfolio demo. Duplicate at `founder-hub\nexus-iiot-platform` is slated for retirement.
 
 ## Planning rules
 

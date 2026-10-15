@@ -1,0 +1,20 @@
+[
+ {
+  "id": "00000000-0000-4000-8000-000000000000",
+  "opened_at": "2026-10-15T14:03:43+00:00",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "asset": "ageing-01",
+  "asset_display_name": "Ageing Oven",
+  "signal": "oven_temp_c",
+  "alert_type": "threshold",
+  "severity": "critical",
+  "value": 521.11,
+  "threshold": 195.0,
+  "state": "OPEN",
+  "message": "Ageing Oven fault 711: Ageing oven temperature out of T6 window \u2014 in-flight batch quality suspect. MNC Customer A order may be held for retest.",
+  "acked_at": null,
+  "closed_at": null,
+  "rule_id": null
+ }
+]

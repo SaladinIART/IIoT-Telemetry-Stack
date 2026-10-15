@@ -75,19 +75,21 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - No broken relative links (scripted check).
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~30k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, branch `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (low), ~15k tokens
+- Notes: deviated from plan: OPC UA evidence dirs NOT archived — every one is cited by the condition report (~700 KB total); moving them would break traceability. Archived recovery, career-readiness, PROGRESS.md, SWOT into docs/archive/ with README. Link check: 0 broken relative links.
 
 ### CP-5: Fixture capture script + real captures
 - Goal: Record real API output for every scenario.
 - Acceptance criteria:
-  - `tools/capture_demo_fixtures.py`: for each of 6 scenarios → POST `/demo/scenario/{name}`, wait for pipeline settle, GET `/dashboard`, `/assets`, `/alerts`, `/kpis`, `/sites`, per-asset telemetry → `frontend/static/demo-fixtures/<scenario>/*.json` + `manifest.json` (capture time, git SHA, stack versions).
+  - `tools/capture_demo_fixtures.py`: for each of 6 scenarios → POST `/demo/scenario/{name}`, wait for pipeline settle, GET `/dashboard`, `/assets`, `/alerts`, `/kpis`, `/sites`, per-asset telemetry → `frontend/demo-fixtures/<scenario>/*.json` + `manifest.json` (capture time, git SHA, stack versions).
   - **User runs Docker stack once** (`docker` is not on PATH in Claude's shell); script runs end to end.
   - Fixtures < 2 MB total; no secrets.
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~40k (approx.)
-- Status: todo (blocked on Docker run by user)
-- Model used: —
+- Status: partial — tooling done + tested; REAL capture still needs the user's Docker run
+- Model used: sonnet-5-5 (medium), ~40k tokens
+- Notes: `tools/capture_demo_fixtures.py` (tested against a stub API) writes real output + manifest `source: captured`. Because Docker is unavailable to the agent, `tools/make_placeholder_demo_fixtures.py` produces schema-validated PLACEHOLDER fixtures (`source: placeholder`, validated against the real Pydantic API schemas in tests) so CP-6+ can be built; the demo UI must show a visible notice while source != captured. To finish: `docker compose up --build -d` then `python tools/capture_demo_fixtures.py`, commit the result.
 
 ### CP-6: Svelte demo-mode data layer
 - Goal: Frontend runs with no backend when `VITE_DEMO_MODE=true`.
@@ -100,8 +102,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Manual browser check: all 6 scenarios, all routes, mobile width.
 - Recommended model: sonnet-4-6 (high)
 - Token estimate: ~80k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, commit on `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (high), ~70k tokens
+- Notes: fixtures live in `frontend/demo-fixtures/` (NOT `static/`) so the Docker build doesn't ship them; `scripts/build-demo.mjs` copies them into `build-demo/`. Verified in a real browser under a `/IIoT-Telemetry-Stack/` sub-path with a Pages-style 404 fallback: all 6 routes load, scenario switch updates dashboard/alerts badge, scenario persists across reload (sessionStorage), `svelte-check` 0 errors, normal build unchanged. Banner reads manifest: shows 'Sample data' warning until fixtures are `source: captured`. Mobile width not yet checked. Caveat: on Windows Git Bash set `MSYS_NO_PATHCONV=1` when passing BASE_PATH.
 
 ### CP-7: GitHub Pages deploy
 - Goal: Demo live at `https://salbotics.uk/IIoT-Telemetry-Stack/`.
@@ -111,8 +114,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Deep links and refresh work (404.html fallback).
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~30k (approx.)
-- Status: todo
-- Model used: —
+- Status: done in repo; NOT yet live — needs one-time Pages enablement + merge to main
+- Model used: sonnet-5-5 (low), ~12k tokens
+- Notes: `.github/workflows/demo-pages.yml` (checkout v4, setup-node v4, configure-pages v5, upload-pages-artifact v3, deploy-pages v4 — same versions as the website repo). CI Frontend Build job now also runs `svelte-check` and `build:demo` with BASE_PATH so PRs catch demo breakage. Repo Pages is currently NOT enabled (API returned 404). To go live: Settings > Pages > Source = GitHub Actions (or `gh api -X POST repos/SaladinIART/IIoT-Telemetry-Stack/pages -f build_type=workflow`), then merge to main. Expected URL https://salbotics.uk/IIoT-Telemetry-Stack/ — unverified until first deploy. Deploying placeholders is visibly labelled by the banner.
 
 ### CP-8: README rewrite
 - Goal: 10-second pitch for non-engineers, depth for engineers.
@@ -121,8 +125,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Under ~150 lines; all links valid.
 - Recommended model: opus-4-7 (medium) — writing + positioning
 - Token estimate: ~40k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, commit on `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (high; plan recommended opus-4-7), ~30k tokens
+- Notes: 114 lines, 0 broken relative links. Numeric claims checked against code (7 assets / 35 signals from register_map.json). The 'How this was built, with AI' section states the user's agreed framing — user should review the wording since it speaks in first person. Live-demo link points to a URL that only resolves after Pages is enabled and this branch merges. Video link intentionally omitted until CP-10 produces one.
 
 ### CP-9: Fresh screenshots
 - Goal: Screenshots show the strongest states.
@@ -131,8 +136,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Replace `docs/windows-demo/screenshots/*`; captions state "simulated equipment".
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~25k (approx.)
-- Status: todo
-- Model used: —
+- Status: done with caveat — screenshots show PLACEHOLDER data (banner visible in each) until real fixtures are captured; re-run `tools/capture_demo_screenshots.ps1` afterwards
+- Model used: sonnet-5-5 (medium), ~45k tokens
+- Notes: deviated from plan: kept docs/windows-demo/screenshots (real Grafana captures) and added docs/demo/screenshots + a repeatable headless-Edge script. Review of the first pass found (a) placeholder faulted asset showed GOOD instead of BAD — fixed in generator; (b) a REAL defect: sidebar never collapsed on phones — added a mobile layout to +layout.svelte, verified at true 375 px emulation (no horizontal page scroll). Added `?scenario=` deep links (usable from the case study). Added tools/serve_demo.py for Pages-style local preview. Narrow shot is 500 px because headless Chrome enforces a minimum width.
 
 ### CP-10: Video shot list
 - Goal: User can record a 75 s video in one take.
@@ -141,8 +147,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - User records + uploads unlisted to YouTube; URL recorded.
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~12k (approx.)
-- Status: todo
-- Model used: —
+- Status: shot list done; RECORDING is the user's step (needs Docker + screen capture)
+- Model used: sonnet-5-5 (low), ~8k tokens
+- Notes: `docs/demo/VIDEO_SHOTLIST.md` also contains the one-time prep that finishes CP-5 (capture real fixtures) in the same Docker session. Script/URLs taken from docs/windows-demo/scripts and WINDOWS_DEMO.md.
 
 ### CP-11: Website case-study upgrade
 - Goal: salbotics.uk/projects/nexus-iiot shows output first.
@@ -151,8 +158,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Branch off `origin/main`; `npm run build` passes; PR opened; preview checked at desktop + mobile.
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~60k (approx.)
-- Status: todo
-- Model used: —
+- Status: draft PR open, GATED — SaladinIART/SaladinIART.github.io#6 (do not merge until Pages is live + real fixtures captured)
+- Model used: sonnet-5-5 (medium), ~35k tokens
+- Notes: data-only change plus one optional `buildProcess` section in App.jsx. Deviated from plan: no video embed (no URL yet) and no new screenshots on the public page (current ones carry a 'sample data' banner); both are follow-ups. Built + rendered locally; GEMINI.md public-safety rules checked.
 
 ## Model + token summary
 

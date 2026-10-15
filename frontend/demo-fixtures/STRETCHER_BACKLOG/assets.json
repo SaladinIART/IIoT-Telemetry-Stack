@@ -1,0 +1,93 @@
+[
+ {
+  "asset": "furnace-01",
+  "display_name": "Homogenisation Furnace",
+  "asset_type": "furnace",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "extrusion-cell-a",
+  "state": "RUNNING",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "press-01",
+  "display_name": "Extrusion Press",
+  "asset_type": "press",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "extrusion-cell-a",
+  "state": "RUNNING",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "quench-01",
+  "display_name": "Water Quench",
+  "asset_type": "quench",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "extrusion-cell-a",
+  "state": "RUNNING",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "cooling-01",
+  "display_name": "Cooling Table",
+  "asset_type": "cooling",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "extrusion-cell-a",
+  "state": "RUNNING",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "stretcher-01",
+  "display_name": "Profile Stretcher",
+  "asset_type": "stretcher",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "finishing-cell-b",
+  "state": "MAINTENANCE",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "saw-01",
+  "display_name": "Finish Saw",
+  "asset_type": "saw",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "finishing-cell-b",
+  "state": "IDLE",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ },
+ {
+  "asset": "ageing-01",
+  "display_name": "Ageing Oven",
+  "asset_type": "ageing",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "cell_name": "finishing-cell-b",
+  "state": "IDLE",
+  "fault_code": 0,
+  "quality": "GOOD",
+  "last_seen": "2026-10-15T14:03:43+00:00",
+  "open_alert_count": 0
+ }
+]

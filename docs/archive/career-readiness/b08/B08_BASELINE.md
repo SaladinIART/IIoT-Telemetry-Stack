@@ -2,7 +2,7 @@
 
 Date: 15 October 2026. Author: Claude Sonnet 5.5 via Claude Code (user-authorized
 batch B04–B12). Status: READY_FOR_REVIEW, provisional until independent review.
-Builds on the existing `docs/career-readiness/CP1_BASELINE.md` (14 October);
+Builds on the existing `docs/archive/career-readiness/CP1_BASELINE.md` (14 October);
 that file and `CP1_EVIDENCE.json` are preserved unchanged.
 
 ## Scope and evidence labels
@@ -15,14 +15,14 @@ client, clock/sleep). Evidence level: **Simulated component** result plus
 
 - Checkout: `C:/Users/salbot01/Salbotics/salbotics-iiot-aluminium-demo`, branch
   `codex/equipment-fault-evidence`, HEAD `8e50fbc`. Pre-existing dirty state
-  (`GEMINI.md` modified, `docs/career-readiness/` untracked) preserved; frontend
+  (`GEMINI.md` modified, `docs/archive/career-readiness/` untracked) preserved; frontend
   untouched (frozen legacy).
 - `services/collector/app.py` SHA-256 `87b8bd4b…04a2d` (identical to CP-1 record).
 - Existing unit tests, project venv: `pytest tests/unit` → 35 passed (0.61 s).
 - Probe: [`../b08_collector_probe.py`](../b08_collector_probe.py);
   output [`collector_probe.json`](collector_probe.json)
   (SHA-256 `286fb77c…df2da`). Reproduce:
-  `.venv/Scripts/python.exe docs/career-readiness/b08_collector_probe.py --output <new path>`.
+  `.venv/Scripts/python.exe docs/archive/career-readiness/b08_collector_probe.py --output <new path>`.
 
 ## Question
 

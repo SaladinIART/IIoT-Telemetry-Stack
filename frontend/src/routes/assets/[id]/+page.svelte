@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	import { api } from '$lib/api';
 	import SignalChart from '$lib/components/SignalChart.svelte';
 	import StatusPill from '$lib/components/StatusPill.svelte';
@@ -50,7 +51,7 @@
 	}
 </script>
 
-<a class="back" href="/assets">← Assets</a>
+<a class="back" href="{base}/assets">← Assets</a>
 
 {#if loading}
 	<p class="loading">Loading…</p>
