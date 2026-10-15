@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -c \"import json; [json.load\\(open\\(p\\)\\) for p in ['contracts/register_map.json','infra/grafana/provisioning/dashboards/json/overview.json','infra/grafana/provisioning/dashboards/json/production_kpis.json']]; print\\('JSON OK'\\)\")"
-    ]
-  }
-}

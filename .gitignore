@@ -21,3 +21,14 @@ build/
 tmp/
 agentic/
 tmp_*.json
+
+# Frontend build output (rebuilt by services/api/Dockerfile)
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+services/api/static/
+
+# Local scratch screenshots and agent settings
+tmp_*
+Screenshots/
+.claude/settings.local.json
