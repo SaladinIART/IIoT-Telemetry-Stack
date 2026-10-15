@@ -158,8 +158,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Branch off `origin/main`; `npm run build` passes; PR opened; preview checked at desktop + mobile.
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~60k (approx.)
-- Status: todo
-- Model used: —
+- Status: draft PR open, GATED — SaladinIART/SaladinIART.github.io#6 (do not merge until Pages is live + real fixtures captured)
+- Model used: sonnet-5-5 (medium), ~35k tokens
+- Notes: data-only change plus one optional `buildProcess` section in App.jsx. Deviated from plan: no video embed (no URL yet) and no new screenshots on the public page (current ones carry a 'sample data' banner); both are follow-ups. Built + rendered locally; GEMINI.md public-safety rules checked.
 
 ## Model + token summary
 
