@@ -111,7 +111,7 @@ CI also runs `tools/verify_opcua_stack.py` against the OPC UA Compose configurat
 | `infra/grafana/` | Existing dashboards plus OPC UA accepted-data health |
 | `docs/opcua/` | Study plan, guide, condition report and retained experiments |
 | `docs/wiki/` | Version-controlled sources for GitHub wiki pages |
-| `docs/career-readiness/` | Preserved earlier offline baseline and findings |
+| `docs/archive/` | Historical build log, recovery checkpoints and earlier baselines |
 | `frontend/` | Frozen Svelte source and historical built assets |
 
 ## NEXUS consolidation

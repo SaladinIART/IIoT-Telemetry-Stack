@@ -75,8 +75,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - No broken relative links (scripted check).
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~30k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, branch `feat/portfolio-demo`)
+- Model used: sonnet-5-5 (low), ~15k tokens
+- Notes: deviated from plan: OPC UA evidence dirs NOT archived — every one is cited by the condition report (~700 KB total); moving them would break traceability. Archived recovery, career-readiness, PROGRESS.md, SWOT into docs/archive/ with README. Link check: 0 broken relative links.
 
 ### CP-5: Fixture capture script + real captures
 - Goal: Record real API output for every scenario.
