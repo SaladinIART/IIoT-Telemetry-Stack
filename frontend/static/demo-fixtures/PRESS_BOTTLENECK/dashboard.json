@@ -1,0 +1,148 @@
+{
+ "scenario": "PRESS_BOTTLENECK",
+ "health": "AMBER",
+ "health_message": "Extrusion press overload \u2014 downstream idle. Profile throughput halted at press.",
+ "financial": {
+  "cost_rate_myr_hr": 4200.0,
+  "cost_so_far_myr": 1680.0,
+  "orders_at_risk_count": 1,
+  "orders_at_risk_value_myr": 84000.0
+ },
+ "recommended_actions": [
+  {
+   "urgency": "IMMEDIATE",
+   "owner": "MAINTENANCE",
+   "action": "Press overload - inspect die and regrind, downstream is starved."
+  },
+  {
+   "urgency": "URGENT",
+   "owner": "LOGISTICS",
+   "action": "Re-plan order sequence while the press is down."
+  }
+ ],
+ "production": {
+  "throughput_pct": 0.0,
+  "units_today": 1240,
+  "target_today": 2000,
+  "faulted_machine_count": 1
+ },
+ "maintenance": {
+  "machines_healthy": 0,
+  "machines_at_risk": 0,
+  "machines_faulted": 1,
+  "current_mttr_estimate_min": 60
+ },
+ "logistics": {
+  "orders_on_track": 2,
+  "orders_monitoring": 0,
+  "orders_at_risk": 1,
+  "orders_delayed": 0,
+  "next_deadline_at": "2026-10-16T17:56:19+00:00",
+  "next_deadline_customer": "Automotive Customer B",
+  "orders": [
+   {
+    "id": "PO-AL-2024-0018",
+    "customer": "MNC Customer A",
+    "quantity_ordered": 2000,
+    "due_at": "2026-10-17T13:56:19+00:00",
+    "order_value_myr": 84000.0,
+    "computed_status": "AT_RISK"
+   },
+   {
+    "id": "PO-AL-2024-0021",
+    "customer": "Automotive Customer B",
+    "quantity_ordered": 800,
+    "due_at": "2026-10-16T17:56:19+00:00",
+    "order_value_myr": 76000.0,
+    "computed_status": "ON_TRACK"
+   },
+   {
+    "id": "PO-AL-2024-0025",
+    "customer": "Building Systems Customer C",
+    "quantity_ordered": 1500,
+    "due_at": "2026-10-20T13:56:19+00:00",
+    "order_value_myr": 87000.0,
+    "computed_status": "ON_TRACK"
+   }
+  ]
+ },
+ "assets": [
+  {
+   "asset": "furnace-01",
+   "display_name": "Homogenisation Furnace",
+   "asset_type": "furnace",
+   "state": "STARTUP",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  },
+  {
+   "asset": "press-01",
+   "display_name": "Extrusion Press",
+   "asset_type": "press",
+   "state": "FAULTED",
+   "fault_code": 211,
+   "cost_rate_myr_hr": 4200.0,
+   "cost_so_far_myr": 1680.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "HIGH"
+  },
+  {
+   "asset": "quench-01",
+   "display_name": "Water Quench",
+   "asset_type": "quench",
+   "state": "IDLE",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  },
+  {
+   "asset": "cooling-01",
+   "display_name": "Cooling Table",
+   "asset_type": "cooling",
+   "state": "IDLE",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  },
+  {
+   "asset": "stretcher-01",
+   "display_name": "Profile Stretcher",
+   "asset_type": "stretcher",
+   "state": "IDLE",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  },
+  {
+   "asset": "saw-01",
+   "display_name": "Finish Saw",
+   "asset_type": "saw",
+   "state": "IDLE",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  },
+  {
+   "asset": "ageing-01",
+   "display_name": "Ageing Oven",
+   "asset_type": "ageing",
+   "state": "IDLE",
+   "fault_code": 0,
+   "cost_rate_myr_hr": 0.0,
+   "cost_so_far_myr": 0.0,
+   "last_maint_at": "2026-10-06T13:56:19+00:00",
+   "pm_risk": "LOW"
+  }
+ ]
+}

@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 174.25,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 181.66,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 187.96,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 188.85,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.23,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 188.09,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 197.99,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 200.05,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.43,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.62,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 199.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 197.36,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 200.36,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 197.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 196.53,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.86,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 196.11,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.5,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 190.79,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 189.45,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 184.5,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 181.54,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 185.19,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 177.78,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 177.37,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 170.16,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 167.19,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 162.9,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 162.37,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 164.75,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 166.26,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 155.26,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 165.87,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 161.24,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 156.45,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 164.03,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 164.19,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 158.66,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 164.76,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 166.53,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 165.8,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 168.62,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 172.58,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 175.34,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 181.03,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 188.06,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 183.51,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 182.89,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 194.05,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.74,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 191.14,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.03,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 194.32,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 202.64,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 197.34,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 205.23,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.98,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 203.89,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 199.57,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 191.56,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.43,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.6,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.63,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.58,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.66,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.61,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.61,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.64,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.76,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.73,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.77,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.75,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.69,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.62,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.69,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.6,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.5,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.54,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.5,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.51,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.42,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.42,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.37,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.32,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.25,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.26,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.21,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.27,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.28,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.25,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.25,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.24,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.39,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.31,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.46,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.47,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.42,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.47,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.54,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.61,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.61,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.61,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.59,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.65,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.78,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.7,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.77,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "MAINTENANCE"
+ }
+]

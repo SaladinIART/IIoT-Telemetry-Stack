@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 174.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 185.48,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 190.54,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.28,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 187.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 191.7,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 190.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 196.95,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.62,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 201.88,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 199.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 198.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 203.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 201.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 197.56,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 192.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.0,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.58,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 184.94,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 188.42,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 185.92,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 179.29,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 172.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 178.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 174.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 174.23,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 169.56,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 161.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 158.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 162.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 157.14,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 154.98,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 162.71,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 164.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 155.86,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 162.51,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 158.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 159.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 168.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 165.44,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 167.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 179.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 178.08,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 180.83,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 185.53,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 186.56,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 188.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 196.86,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 200.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.99,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 198.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 201.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.08,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 198.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 195.58,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 193.7,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 199.38,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_force_kn",
+  "value": 194.95,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.55,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.59,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.55,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.74,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.7,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.73,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.69,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.62,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.51,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.53,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.38,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.39,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.38,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.22,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.27,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.39,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.39,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.35,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.43,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.5,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.44,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.54,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.52,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.66,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.74,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.67,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.71,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.73,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "stretcher-01",
+  "signal": "stretch_pct",
+  "value": 1.66,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ }
+]

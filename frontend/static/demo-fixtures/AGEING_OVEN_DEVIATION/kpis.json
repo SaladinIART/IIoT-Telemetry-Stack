@@ -1,0 +1,93 @@
+[
+ {
+  "asset": "furnace-01",
+  "display_name": "Homogenisation Furnace",
+  "asset_type": "furnace",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "press-01",
+  "display_name": "Extrusion Press",
+  "asset_type": "press",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "quench-01",
+  "display_name": "Water Quench",
+  "asset_type": "quench",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "cooling-01",
+  "display_name": "Cooling Table",
+  "asset_type": "cooling",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "stretcher-01",
+  "display_name": "Profile Stretcher",
+  "asset_type": "stretcher",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "saw-01",
+  "display_name": "Finish Saw",
+  "asset_type": "saw",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 28800,
+  "quality_rate": 1.0,
+  "running_minutes": 480.0,
+  "fault_minutes": 0.0,
+  "availability": 1.0,
+  "open_alert_count": 0
+ },
+ {
+  "asset": "ageing-01",
+  "display_name": "Ageing Oven",
+  "asset_type": "ageing",
+  "window_hours": 8.0,
+  "total_readings": 28800,
+  "good_readings": 26900,
+  "quality_rate": 0.934,
+  "running_minutes": 380.0,
+  "fault_minutes": 40.0,
+  "availability": 0.79,
+  "open_alert_count": 1
+ }
+]

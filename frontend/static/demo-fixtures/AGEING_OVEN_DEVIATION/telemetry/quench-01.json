@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 219.15,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 225.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 226.29,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 223.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 224.95,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.9,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 234.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 232.02,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 233.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.22,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 236.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.49,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 235.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.48,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.44,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.01,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 225.43,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.4,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 226.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 223.5,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 216.2,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 220.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 212.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 212.02,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 214.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 214.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 205.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 204.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 209.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 206.88,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 203.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 207.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 205.1,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 211.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 209.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 206.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 208.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 216.17,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 213.71,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 218.37,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 217.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 216.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 222.08,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 228.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.44,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.53,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.1,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 234.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 229.61,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 232.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 230.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "quench-01",
+  "signal": "quench_flow_lpm",
+  "value": 227.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 56.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 57.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.38,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.48,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 61.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 61.76,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 66.52,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.09,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.58,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.82,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 66.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.1,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.2,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.61,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.73,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.12,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 59.72,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 56.22,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 54.59,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 55.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 56.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 52.66,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 52.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 52.32,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 52.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.94,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.9,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 48.86,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 47.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 51.61,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 50.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 53.3,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 53.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 56.39,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 56.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 54.89,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 57.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 58.49,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 60.61,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.92,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.82,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 64.28,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.83,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.8,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.27,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.21,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 65.54,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 63.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "quench-01",
+  "signal": "exit_temp_c",
+  "value": 62.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ }
+]

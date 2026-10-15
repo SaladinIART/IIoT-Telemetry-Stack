@@ -1,0 +1,14 @@
+{
+ "scenario": "AGEING_OVEN_DEVIATION",
+ "health": "GREEN",
+ "message": "All systems nominal. Extrusion + finishing on target. No action required.",
+ "auto_resets_in_seconds": null,
+ "valid_scenarios": [
+  "NORMAL",
+  "QUALITY_HOLD_QUENCH",
+  "PRESS_BOTTLENECK",
+  "STRETCHER_BACKLOG",
+  "AGEING_OVEN_DEVIATION",
+  "EMERGENCY_PRESS_TRIP"
+ ]
+}

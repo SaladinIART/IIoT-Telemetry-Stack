@@ -1,0 +1,962 @@
+[
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 569.15,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 573.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 570.27,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 572.45,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 574.47,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 576.12,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 577.98,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.25,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 579.65,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 581.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 577.49,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.94,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 582.85,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 582.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 581.12,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 576.52,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 579.42,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 578.29,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 572.59,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 574.22,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 573.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 572.5,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 570.78,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 565.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 566.95,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 564.56,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 562.06,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 565.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 564.89,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 562.53,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 558.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 560.69,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 558.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 559.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 558.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 558.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 559.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 559.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 560.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 562.33,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 563.98,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 563.08,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 570.2,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 568.87,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 569.31,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 573.68,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 572.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 575.37,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 574.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 577.02,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 575.85,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 577.62,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 582.16,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 582.88,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 582.28,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 580.98,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "furnace-01",
+  "signal": "billet_temp_c",
+  "value": 578.93,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:21+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 549.84,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:23+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 552.12,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:25+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 550.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:27+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 553.55,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:29+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 556.6,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:31+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 554.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:33+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 558.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:35+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 555.64,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:37+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 557.43,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:39+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 558.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:41+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 557.18,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:43+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 561.97,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:45+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 558.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:47+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 559.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:49+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 556.96,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:51+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 559.37,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:53+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 557.48,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:55+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 554.09,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:57+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 556.34,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:54:59+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 553.56,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:01+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 554.4,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:03+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 551.79,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:05+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 548.02,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:07+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 548.58,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:09+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 546.41,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:11+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 547.54,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:13+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 542.91,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:15+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 541.37,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:17+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 540.18,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:19+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 544.03,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:21+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 538.26,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:23+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 541.05,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:25+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 539.81,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:27+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 539.84,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:29+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 540.82,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:31+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 538.89,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:33+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 542.75,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:35+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 542.22,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:37+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 543.41,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:39+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 542.77,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:41+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 545.02,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:43+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 548.24,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:45+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 549.2,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:47+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 547.89,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:49+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 548.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:51+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 554.43,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:53+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 550.18,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:55+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 551.46,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:57+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 557.13,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:55:59+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 557.63,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:01+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 555.04,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:03+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 559.23,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:05+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 556.85,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:07+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 560.57,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:09+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 560.28,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:11+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 560.86,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:13+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 562.07,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:15+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 556.96,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:17+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 559.27,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ },
+ {
+  "ts": "2026-10-15T13:56:19+00:00",
+  "asset": "furnace-01",
+  "signal": "preheat_zone_temp_c",
+  "value": 560.36,
+  "quality": "GOOD",
+  "state": "RUNNING"
+ }
+]

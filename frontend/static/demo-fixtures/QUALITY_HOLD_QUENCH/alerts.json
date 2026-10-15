@@ -1,0 +1,20 @@
+[
+ {
+  "id": "00000000-0000-4000-8000-000000000000",
+  "opened_at": "2026-10-15T13:56:19+00:00",
+  "site": "demo-site",
+  "line_name": "aluminium-profile-line-1",
+  "asset": "quench-01",
+  "asset_display_name": "Water Quench",
+  "signal": "quench_flow_lpm",
+  "alert_type": "threshold",
+  "severity": "critical",
+  "value": 103.75,
+  "threshold": 260.0,
+  "state": "OPEN",
+  "message": "Water Quench fault 311: Quench flow below spec with rising exit temperature \u2014 P2 quality hold on in-box profiles. Automotive Customer B order at risk.",
+  "acked_at": null,
+  "closed_at": null,
+  "rule_id": null
+ }
+]

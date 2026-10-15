@@ -87,8 +87,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - Fixtures < 2 MB total; no secrets.
 - Recommended model: sonnet-4-6 (medium)
 - Token estimate: ~40k (approx.)
-- Status: todo (blocked on Docker run by user)
-- Model used: —
+- Status: partial — tooling done + tested; REAL capture still needs the user's Docker run
+- Model used: sonnet-5-5 (medium), ~40k tokens
+- Notes: `tools/capture_demo_fixtures.py` (tested against a stub API) writes real output + manifest `source: captured`. Because Docker is unavailable to the agent, `tools/make_placeholder_demo_fixtures.py` produces schema-validated PLACEHOLDER fixtures (`source: placeholder`, validated against the real Pydantic API schemas in tests) so CP-6+ can be built; the demo UI must show a visible notice while source != captured. To finish: `docker compose up --build -d` then `python tools/capture_demo_fixtures.py`, commit the result.
 
 ### CP-6: Svelte demo-mode data layer
 - Goal: Frontend runs with no backend when `VITE_DEMO_MODE=true`.
