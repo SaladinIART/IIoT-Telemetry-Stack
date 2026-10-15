@@ -4,7 +4,7 @@
 
 NEXUS is a self-contained IIoT monitoring platform. It collects sensor data from factory floor equipment via Modbus TCP, routes it through an MQTT broker, persists it in TimescaleDB, detects anomalies in real time, and exposes a REST/SSE API consumed by a Svelte web application and Grafana dashboards.
 
-The architecture is designed to scale from a single-host proof-of-concept to a multi-site Kubernetes deployment by changing configuration — not code.
+The implemented and CI-verified deployment is a single-host Docker Compose stack. The MQTT topics and database schema carry a `site` dimension from day one, so additional sites would not require schema changes.
 
 ---
 
@@ -51,7 +51,6 @@ The architecture is designed to scale from a single-host proof-of-concept to a m
   infra/mosquitto/    Eclipse Mosquitto :1883
   │  - ACL-based topic authorization (per-service credentials)
   │  - Clients: collector · ingestor · alerting
-  │  - Tier 3 replacement: EMQX cluster (horizontal scaling to millions of connections)
   │
   └─────────────────────────────────────┬──────────────────────────────────────
                                         │ fan-out to parallel subscribers
@@ -180,9 +179,8 @@ The architecture is designed to scale from a single-host proof-of-concept to a m
  INFRASTRUCTURE LAYER
 ═══════════════════════════════════════════════════════════════════════════════
 
-  Tier 1   docker-compose.yml             single host, one site
-  Tier 2   docker-compose.multi.yml       multi-collector, multi-site
-  Tier 3   helm/nexus/                    Kubernetes, EMQX cluster
+  Deploy   docker-compose.yml             single host, one site (Modbus collector)
+           docker-compose.opcua.yml       optional overlay: OPC UA collector instead
 
   CI/CD    .github/workflows/
              ci.yml            ruff lint + pytest unit + Svelte build  (every push)
@@ -210,18 +208,11 @@ The architecture is designed to scale from a single-host proof-of-concept to a m
 
 ---
 
-## Multi-Site Scaling Strategy
+## Multi-Site Readiness
 
-The MQTT topic schema and TimescaleDB schema both carry a `site` column from day one. Scaling works as follows:
+The MQTT topic schema (`iiot/v1/{type}/{site}/{line}/{asset}/{signal}`) and the TimescaleDB tables both carry a `site` column from day one. A second site would mean another collector instance with a different `SITE` value; consumers already subscribe by wildcard and query by `site`.
 
-| What | Tier 1 | Tier 2 | Tier 3 |
-|------|--------|--------|--------|
-| Add a site | Not applicable | Add `collector_site_X` service with `SITE=site-x` env var in `docker-compose.multi.yml` | Add collector Deployment in `helm/nexus/values.yaml` |
-| Data separation | Single `site='demo-site'` in DB | Multiple `DISTINCT site` values in same TimescaleDB | Same — schema unchanged |
-| MQTT broker | Mosquitto | Mosquitto (handles multi-site naturally via topic wildcard) | EMQX cluster |
-| Code changes | None | None | None |
-
-This is the architectural choice that matters: **multi-site was designed in, not bolted on.**
+Only the single-site Compose deployment is implemented and verified in CI. Multi-site overlays, a clustered broker and Kubernetes manifests are **not** part of this repository.
 
 ---
 

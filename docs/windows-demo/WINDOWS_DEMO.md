@@ -132,10 +132,7 @@ Three layers, each catches what the other misses:
 All three feed the same `alerts` table and the same UI. See [ADR-003](../adr/003-alert-three-layer.md).
 
 **Q. How would this scale beyond one site?**  *[PLAT] [MES]*
-Three deployment tiers with **no code rewrites** — only config:
-- Tier 1 (now): `docker compose up` — single host, < 10 devices
-- Tier 2: multi-site Compose overlay + MQTT bridge — 10-100 devices, 1-3 sites
-- Tier 3: Helm chart on Kubernetes + EMQX cluster — 100+ devices, multi-site
+What exists today is a single-host `docker compose up` deployment for one site, verified in CI. The MQTT topics and database tables carry a `site` dimension from day one, so a second site would be another collector with a different `SITE` value and no schema change. Clustered brokers and Kubernetes packaging are future work, not built or tested here.
 
 **Q. Is the code production-ready?**  *[PLAT]*
 It's *demo-ready* and *architecturally* production-shaped: typed Python (FastAPI + pydantic), schema-validated MQTT, hypertable DB with proper indexes, CI on every push, ADRs for every non-obvious choice. To go production you'd want: real secrets management (Vault/AWS Secrets), TLS on MQTT, a proper identity layer in front of the API, and load tests at target volume. None of those are large lifts — they're listed because they're missing, not because the design blocks them.

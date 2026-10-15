@@ -59,4 +59,4 @@ We use **FastAPI** (Python 3.13) for the REST/SSE API, and **Svelte 5** (compile
 
 **Streamlit** — excellent for data scientists building rapid prototypes, but CSS and layout control is limited. Not suitable for a production-looking plant operator UI.
 
-**Separate Nginx container** — adds operational complexity for Tier 1 with no benefit. Deferred to Tier 3 (Kubernetes Ingress takes over that role).
+**Separate Nginx container** — adds operational complexity for a single-host deployment with no benefit. Revisit only if the API is deployed behind a multi-host ingress.
