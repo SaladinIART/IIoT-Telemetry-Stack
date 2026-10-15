@@ -132,7 +132,7 @@ If they want to go deeper, pick from these:
 
 3. **3-layer alert logic** — open `docs/adr/003-alert-three-layer.md`. Walk threshold → z-score baseline → IsolationForest. Ask them: "What does threshold alerting miss?" (drift). "What does statistical miss?" (novel pattern). ML fills that gap.
 
-4. **Scale tiers** — show the Tier 1 / Tier 2 / Tier 3 table in README. "No code rewrites — only config." `docker compose up` → multi-site Compose overlay → Helm chart on Kubernetes.
+4. **Multi-site readiness** — open `contracts/topic_contract.md` and `db/migrations/001_init.sql`. "Every topic and table carries `site` from day one, so a second site is another collector with a different `SITE` value — no schema change. I've only built and verified the single-site deployment."
 
 5. **CI/CD** — open the GitHub repo Actions tab. Every push triggers lint + unit test + build. The badge on the README is live. Shows production-quality habits, not just a working demo.
 
@@ -148,7 +148,7 @@ If they want to go deeper, pick from these:
 | "Could you add OPC UA?" | The canonical NEXUS repository now includes a read-only local extension; use the current OPC UA guide/report to show exactly which paths were verified. |
 | "What would you change first if this went to production?" | TLS on Mosquitto + mTLS for collector auth. Currently the MQTT ACL is username/password only; for a real factory VLAN that's acceptable but not ideal. |
 | "Why Python and not Go?" | FastAPI + pydantic gives auto-generated OpenAPI docs and type-safe contracts for free; the performance ceiling for this data volume (1 sample/s per asset, 7 assets) is nowhere near the point where Go's throughput matters. |
-| "Have you deployed this to cloud?" | Not yet — intentionally self-contained (no cloud dependency by design). The Helm chart is ready for a K8s cluster (EKS, AKS, GKE) when the use case justifies it. |
+| "Have you deployed this to cloud?" | Not yet — intentionally self-contained (no cloud dependency by design). Every service is containerised, so moving to a managed cluster is a packaging task I'd take on when a use case justifies it; I haven't built or tested Kubernetes manifests for it. |
 | "How long did this take?" | ~7 months of evenings and weekends (Sept 2025 → Apr 2026), building clean from scratch around a defined architecture. |
 | "What's your weakest area in this stack?" | Honestly — the ML layer. IsolationForest is well-understood and explainable, but I'd want a data scientist to validate the feature engineering for a real production rollout. I built the pipeline; I'd collaborate on the model. |
-| "What comes next?" | Real PLC connection trial, proper secret management (Vault), and a multi-tenant Tier 2 deployment across two simulated sites. See `PROGRESS.md`. |
+| "What comes next?" | Real PLC connection trial, proper secret management (Vault), and a second simulated site to exercise the multi-site schema end to end. |

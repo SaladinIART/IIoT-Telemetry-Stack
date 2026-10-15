@@ -87,6 +87,8 @@ Live checklist. Updated as each task is completed.
 
 ## Phase 6 — Tier 2 Multi-Site
 
+> **Removed 2026-10-15 (portfolio CP-3):** The multi-site overlay (`docker-compose.multi.yml`, EMQX) and runbook 04 was never exercised in CI and has been deleted so the repository only claims what is verified. Recover from git history before the CP-3 commit if needed.
+
 - [x] `docker-compose.multi.yml` — `collector_site_b` + `modbus_sim_b` + EMQX + seed
 - [x] `infra/grafana/provisioning/dashboards/json/production_kpis.json` — multi-site variable panel
 - [x] `docs/runbooks/04-scaling-to-tier2.md`
@@ -109,6 +111,8 @@ Live checklist. Updated as each task is completed.
 ---
 
 ## Phase 8 — Kubernetes Helm Charts *(optional, high-impact)*
+
+> **Removed 2026-10-15 (portfolio CP-3):** The Helm chart (`helm/nexus/`) and runbook 05 — never tested on a cluster — was never exercised in CI and has been deleted so the repository only claims what is verified. Recover from git history before the CP-3 commit if needed.
 
 - [x] `helm/nexus/Chart.yaml` + `values.yaml`
 - [x] `helm/nexus/templates/` — `_helpers.tpl`, `secrets`, `emqx`, `modbus-sim`, `collector`, `ingestor`, `alerting`, `api`, `ingress`, `hpa`

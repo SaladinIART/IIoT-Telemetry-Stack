@@ -52,8 +52,8 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - `npm run build` passes; PR opened, not merged without user OK.
 - Recommended model: haiku-4-5 (low)
 - Token estimate: ~10k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15) — PR SaladinIART/SaladinIART.github.io#5, branch `fix/nexus-repo-link`, worktree `Salbotics/salbotics-nexus-link-worktree` (main checkout had user-owned dirty edits, left untouched). Not merged.
+- Model used: opus-5-5 (low effort), ~15k tokens
 
 ### CP-3: Delete unverified infra, pin images
 - Goal: Repo claims only what CI verifies.
@@ -63,8 +63,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - `timescale/timescaledb` pinned to an exact tag; `docker compose config` valid.
 - Recommended model: haiku-4-5 (medium)
 - Token estimate: ~20k (approx.)
-- Status: todo
-- Model used: —
+- Status: done (2026-10-15, branch `chore/cp3-remove-unverified-infra`, stacked on CP-1 branch)
+- Model used: opus-5-5 (edits) + sonnet-5-5 (verify, commit), ~50k tokens
+- Notes: also rewrote the Tier 2/3 claims in architecture.md, ADR-002, WINDOWS_DEMO.md and DEMO_SCRIPT_5MIN.md (the demo script had recruiter talking points claiming a 'ready' Helm chart). PROGRESS.md and docs/recovery keep history with a removal note. TimescaleDB pinned to 2.30.2-pg16 = the digest `latest-pg16` resolved to on 2026-10-15 (6f139d56…), so runtime is unchanged. `docker compose config` NOT run (no Docker in agent shell); YAML parsed with Python instead.
 
 ### CP-4: Archive internal docs
 - Goal: Top-level repo + `docs/` read like a product, not a work log.
