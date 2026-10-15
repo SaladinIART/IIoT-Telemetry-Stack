@@ -147,8 +147,9 @@ Goal: recruiters and clients visiting salbotics.uk/projects/nexus-iiot can **see
   - User records + uploads unlisted to YouTube; URL recorded.
 - Recommended model: sonnet-4-6 (low)
 - Token estimate: ~12k (approx.)
-- Status: todo
-- Model used: —
+- Status: shot list done; RECORDING is the user's step (needs Docker + screen capture)
+- Model used: sonnet-5-5 (low), ~8k tokens
+- Notes: `docs/demo/VIDEO_SHOTLIST.md` also contains the one-time prep that finishes CP-5 (capture real fixtures) in the same Docker session. Script/URLs taken from docs/windows-demo/scripts and WINDOWS_DEMO.md.
 
 ### CP-11: Website case-study upgrade
 - Goal: salbotics.uk/projects/nexus-iiot shows output first.
