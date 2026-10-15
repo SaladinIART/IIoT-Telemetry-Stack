@@ -1,0 +1,126 @@
+{
+  "timestamp_utc": "2026-10-14T09:48:22.496732+00:00",
+  "source_commit": "8e50fbc8e217fc0d149d601b14fec0cc6a507ff9",
+  "branch": "codex/equipment-fault-evidence",
+  "python": "3.13.5",
+  "packages": {
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "attrs": "26.1.0",
+    "blinker": "1.9.0",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "click": "8.5.0",
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "fastapi": "0.143.0",
+    "Flask": "3.1.3",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httptools": "0.9.0",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "itsdangerous": "2.2.0",
+    "Jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "MarkupSafe": "3.0.4",
+    "narwhals": "2.27.1",
+    "nexus-iiot-platform": "0.1.0",
+    "numpy": "2.5.4",
+    "opentelemetry-api": "1.45.1",
+    "packaging": "26.3",
+    "paho-mqtt": "2.1.0",
+    "pip": "25.1.1",
+    "pluggy": "1.6.0",
+    "psycopg": "3.3.6",
+    "psycopg-binary": "3.3.6",
+    "psycopg-pool": "3.3.3",
+    "pydantic": "2.14.1",
+    "pydantic_core": "2.50.1",
+    "Pygments": "2.21.0",
+    "pymodbus": "3.8.3",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "python-dotenv": "1.2.4",
+    "PyYAML": "6.0.3",
+    "referencing": "0.37.0",
+    "requests": "2.34.2",
+    "rpds-py": "2026.9.1",
+    "ruff": "0.17.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "starlette": "1.8.0",
+    "threadpoolctl": "3.7.0",
+    "typing_extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0",
+    "uvicorn": "0.54.0",
+    "watchfiles": "1.3.0",
+    "websockets": "17.2",
+    "Werkzeug": "3.1.9"
+  },
+  "source_sha256": {
+    "sim/modbus_sim/scenario_api.py": "37806e06366337c01895f0c226dc87a5a0e13244b7737426f854e448b14fd89e",
+    "sim/modbus_sim/scenario_state.py": "8f8e36cdace4255a51fb8d10e9f2a1abbcd631585ce84a6c5e3c4c015ad09b8c",
+    "services/collector/app.py": "87b8bd4b14817313dc5d22feb9a847b4559737d1521dd4e81b365e0a66d04a2d"
+  },
+  "full_stack": {
+    "status": "NOT_RUN",
+    "reason": "Docker CLI absent from PATH and checked standard installation paths; no MQTT/database/dashboard integration run."
+  },
+  "scenario_probe": {
+    "method": "Flask in-process test client and scenario-state reads",
+    "source": "import sys\nsys.path.insert(0, str(root / \"sim\" / \"modbus_sim\"))\nimport scenario_api, scenario_state\nclient = scenario_api.app.test_client()\nobservations = []\nfor name, expected_health, expected_override in [\n    (\"NORMAL\", \"GREEN\", (2, 0)),\n    (\"QUALITY_HOLD_QUENCH\", \"AMBER\", (3, 311)),\n]:\n    response = client.post(\"/scenario\", json={\"scenario\": name})\n    body = response.get_json()\n    observed = scenario_state.get_override(\"quench-01\")\n    assert response.status_code == 200\n    assert body[\"scenario\"] == name and body[\"health\"] == expected_health\n    assert observed == expected_override\n    readback = client.get(\"/scenario\").get_json()\n    assert readback[\"scenario\"] == name\n    observations.append({\"requested\": name, \"health\": body[\"health\"], \"quench_override\": list(observed), \"http_status\": response.status_code, \"readback\": readback[\"scenario\"]})\ninvalid = client.post(\"/scenario\", json={\"scenario\": \"INVALID_CP1_SCENARIO\"})\nassert invalid.status_code == 422\nassert scenario_state.get_scenario() == \"QUALITY_HOLD_QUENCH\"\nobservations.append({\"requested\": \"INVALID_CP1_SCENARIO\", \"http_status\": invalid.status_code, \"state_preserved\": True})\nresponse = client.post(\"/scenario\", json={\"scenario\": \"NORMAL\"})\nassert response.status_code == 200\nassert response.get_json()[\"health\"] == \"GREEN\"\nassert all(scenario_state.get_override(a) == (2, 0) for a in scenario_state.SCENARIO_STATES[\"NORMAL\"])\nobservations.append({\"requested\": \"NORMAL\", \"health\": \"GREEN\", \"all_seven_asset_states_reset\": True})\n",
+    "status": "PASS",
+    "observations": [
+      {
+        "requested": "NORMAL",
+        "health": "GREEN",
+        "quench_override": [
+          2,
+          0
+        ],
+        "http_status": 200,
+        "readback": "NORMAL"
+      },
+      {
+        "requested": "QUALITY_HOLD_QUENCH",
+        "health": "AMBER",
+        "quench_override": [
+          3,
+          311
+        ],
+        "http_status": 200,
+        "readback": "QUALITY_HOLD_QUENCH"
+      },
+      {
+        "requested": "INVALID_CP1_SCENARIO",
+        "http_status": 422,
+        "state_preserved": true
+      },
+      {
+        "requested": "NORMAL",
+        "health": "GREEN",
+        "all_seven_asset_states_reset": true
+      }
+    ]
+  },
+  "unit_tests": {
+    "command": [
+      "C:\\Users\\salbot01\\Salbotics\\salbotics-iiot-aluminium-demo\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "tests/unit",
+      "-q",
+      "--junitxml=tmp/cp1-unit.xml"
+    ],
+    "exit_code": 0,
+    "stdout": "...................................                                      [100%]\n35 passed in 0.87s\n",
+    "stderr": ""
+  }
+}

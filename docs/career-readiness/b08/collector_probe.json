@@ -1,0 +1,384 @@
+{
+  "asset_under_test": "furnace-01",
+  "evidence_level": "Simulated component (real collector.run(), faked Modbus/MQTT/clock)",
+  "not_covered": [
+    "live Modbus",
+    "MQTT broker",
+    "ingestor/database",
+    "API",
+    "dashboard"
+  ],
+  "probe": "B08 collector component probe",
+  "scenarios": [
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "messages": 91,
+      "scenario": "normal"
+    },
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "alarm_raised",
+          "fault_code": 113,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "BURNER_TRIP",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": null,
+          "fault_code": 113,
+          "kind": "telemetry",
+          "quality": "bad",
+          "reason_code": "BURNER_TRIP",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "alarm_raised",
+          "fault_code": 113,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "BURNER_TRIP",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": null,
+          "fault_code": 113,
+          "kind": "telemetry",
+          "quality": "bad",
+          "reason_code": "BURNER_TRIP",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "messages": 91,
+      "scenario": "equipment_fault_burner_trip"
+    },
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "maintenance_started",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "MAINTENANCE"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "stale",
+          "reason_code": null,
+          "state": "MAINTENANCE"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        },
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "maintenance_started",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "MAINTENANCE"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "stale",
+          "reason_code": null,
+          "state": "MAINTENANCE"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "messages": 91,
+      "scenario": "maintenance_state"
+    },
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "messages": 49,
+      "scenario": "transport_modbus_connect_failed"
+    },
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 999,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "FAULTED"
+        }
+      ],
+      "messages": 46,
+      "scenario": "transport_read_error_one_asset"
+    },
+    {
+      "distinct_all_assets": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "distinct_for_asset_under_test": [
+        {
+          "event_type": "state_changed",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "NONE",
+          "state": "RUNNING"
+        },
+        {
+          "event_type": null,
+          "fault_code": 0,
+          "kind": "telemetry",
+          "quality": "good",
+          "reason_code": null,
+          "state": "RUNNING"
+        },
+        {
+          "event_type": "status",
+          "fault_code": 0,
+          "kind": "event",
+          "quality": null,
+          "reason_code": "collector_status",
+          "state": "RUNNING"
+        }
+      ],
+      "distinct_source_ts_for_asset": 3,
+      "messages": 133,
+      "scenario": "frozen_source_values_clock_advances",
+      "source_ts_span_seconds": 4200.0
+    }
+  ]
+}

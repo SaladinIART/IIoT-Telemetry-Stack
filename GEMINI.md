@@ -1,5 +1,15 @@
 # Gemini Handoff
 
+## B08 review - 15 October 2026
+
+B08 offline component baseline accepted: 35 tests and retained probe reproduced. See docs/career-readiness/b08/B08_REVIEW.md. End-to-end stack unverified; no source fix. User competency NOT ASSESSED.
+
+## Current career-evidence checkpoint — 14 October 2026
+
+The user approved retaining the existing aluminium scenario and understands the topic. CP-1 is a bounded baseline investigation before new fault-diagnosis functionality. Work is on `codex/equipment-fault-evidence` in a fresh C: clone; remote main and D: archive both matched `8e50fbc8e217fc0d149d601b14fec0cc6a507ff9`. Preserve D: as archive, including its untracked REINSTALL.md.
+
+Read `docs/career-readiness/CP1_BASELINE.md` and `CP1_EVIDENCE.json` for acceptance status, environment, observations and limitations. Docker was unavailable in the checked environment, so a component/API probe cannot establish the complete pipeline. Existing public walkthrough claims also need review before promotion. No feature changes, push or publication. Stop after CP-1; obtain the user's continuation before CP-2. Exact session model and actual token usage are unavailable; model preference and estimates are recorded in the checkpoint report.
+
 Use this file for language-oriented collaboration and cross-model continuity.
 
 ## Purpose
@@ -37,3 +47,7 @@ Master list:
 - Current state:
 - Risks:
 - Next prompt for Gemini:
+
+## B08 offline diagnostic baseline — 15 October 2026
+
+- Claude Sonnet 5.5 (Claude Code), user-authorized batch. Added docs/career-readiness/b08_collector_probe.py and b08/ (collector_probe.json, B08_BASELINE.md). Real collector.run() with faked Modbus/MQTT/clock; no Docker/broker/frontend. 35 unit tests pass. Findings: equipment fault, maintenance and transport failure all surface as FAULTED with code 999 in the status event; "stale" quality = maintenance state; no data-age detection. No fixes made. READY_FOR_REVIEW.
