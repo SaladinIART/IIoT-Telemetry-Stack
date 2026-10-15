@@ -8,13 +8,13 @@ Endpoints:
     POST /scenario          → body: {"scenario": "LINE_FAULT"}
     GET  /health            → liveness probe
 """
+
 from __future__ import annotations
 
 import json
 import logging
 
 from flask import Flask, Response, request
-
 from scenario_state import set_scenario, status
 
 LOG = logging.getLogger("scenario_api")
@@ -40,9 +40,7 @@ def set_scenario_route() -> Response:
         LOG.info("scenario changed to %s", name)
         return Response(json.dumps(status()), mimetype="application/json", status=200)
     except ValueError as exc:
-        return Response(
-            json.dumps({"error": str(exc)}), mimetype="application/json", status=422
-        )
+        return Response(json.dumps({"error": str(exc)}), mimetype="application/json", status=422)
 
 
 def run() -> None:

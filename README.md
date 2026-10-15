@@ -1,229 +1,121 @@
-## 👀 Non-technical viewer? Start here.
+# NEXUS — Industrial Intelligence Platform
 
-> **Running on Windows + Docker Desktop?** The demo is three double-clicks.
-> No coding, no command line, no cloud account needed.
->
-> | What | Link |
-> |---|---|
-> | Walkthrough + setup (10 min) | [`docs/windows-demo/WINDOWS_DEMO.md`](docs/windows-demo/WINDOWS_DEMO.md) |
-> | 5-min live demo script (recruiter calls) | [`docs/windows-demo/DEMO_SCRIPT_5MIN.md`](docs/windows-demo/DEMO_SCRIPT_5MIN.md) |
-> | Architecture in pictures | [`docs/windows-demo/ARCHITECTURE_DIAGRAM.md`](docs/windows-demo/ARCHITECTURE_DIAGRAM.md) |
+**Canonical repository:** [SaladinIART/IIoT-Telemetry-Stack](https://github.com/SaladinIART/IIoT-Telemetry-Stack). NEXUS is the project name; IIoT-Telemetry-Stack is its repository name.
 
----
+[![CI](https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/workflows/ci.yml/badge.svg)](https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions/workflows/ci.yml)
+[Wiki](https://github.com/SaladinIART/IIoT-Telemetry-Stack/wiki) · [OPC UA guide](docs/opcua/OPCUA_GUIDE.md) · [Condition-assessment report](docs/opcua/CONDITION_ASSESSMENT.md) · [Consolidation record](docs/opcua/CONSOLIDATION_PLAN.md)
 
-# NEXUS — Aluminium Profile Decision Demo
+NEXUS connects simulated manufacturing equipment to a monitoring pipeline. Use **Modbus TCP** for register-based acquisition or the new **read-only OPC UA** path for browsable, typed data and subscriptions. Both feed the existing MQTT telemetry contract, TimescaleDB, FastAPI and Grafana.
 
-> From Factory Floor to Decision Desk
+The engineering question: **when a temperature stops changing, is the process steady, acquisition frozen, the source unreliable, or the connection down?** The OPC UA case investigates each possibility and retains its evidence.
 
-![CI](https://github.com/SaladinIART/salbotics-iiot-aluminium-demo/actions/workflows/ci.yml/badge.svg)
+## What this demonstrates
 
-A self-contained IIoT monitoring platform built around a runnable aluminium extrusion demo — from Modbus register reads to a live executive dashboard and Grafana decision board with real-time alerts. Designed for Penang manufacturing environments. Deployable with a single command.
+| Engineering skill | Practical example |
+| --- | --- |
+| OT/IT integration | Simulated furnace → OPC UA → MQTT → existing NEXUS consumers |
+| Structured equipment data | Browse nodes, resolve namespace URI, inspect types/units/access |
+| Data reliability | Separate source status, acquisition freshness and equipment state |
+| Condition assessment | Compare baseline, steady, frozen, Bad/Uncertain and process-fault cases |
+| Failure handling | Restore OPC UA subscriptions; expose MQTT delivery failure and gaps |
+| Technical reporting | Reproducible commands, raw JSONL traces, hashes, conclusions and limitations |
 
----
+**Evidence boundary:** equipment inputs are **Simulated**. Local OPC UA/MQTT tests use real loopback network traffic. This is independent portfolio work, not employer data, physical commissioning or field measurements. It is not a calibrated digital twin or a production-security qualification. Dated evidence and exact verification scope are in the [report](docs/opcua/CONDITION_ASSESSMENT.md).
 
-## The Problem This Solves
+## Try OPC UA without hardware or Docker
 
-| Problem | How NEXUS answers it |
-|---------|----------------------|
-| Factory data trapped in PLCs, managers using spreadsheets | REST API + Svelte frontend — any browser, no training needed |
-| DX projects fail because no one bridges PLC + code + DevOps | One engineer owns every layer: Modbus → MQTT → Python → TimescaleDB → FastAPI → Svelte → Docker → CI/CD |
-| Failures detected reactively, after machines stop | 3-layer alert engine: threshold rules → statistical baseline → ML anomaly (IsolationForest) |
-| AI tools used blindly without architectural ownership | Structured agentic scaffold + Architecture Decision Records document every choice |
+Requires Python 3.13. From a local clone:
 
----
+```powershell
+git clone https://github.com/SaladinIART/IIoT-Telemetry-Stack.git
+cd IIoT-Telemetry-Stack
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev,opcua,opcua-test]"
+python -m iiot_stack.opcua_server --scenario steady
+```
+
+In a second terminal, activate the same environment, then:
+
+```powershell
+python -m iiot_stack.opcua_client --duration 12 --output tmp/my-first-opcua.jsonl
+```
+
+The client browses six nodes, reads full DataValues, subscribes and records approved telemetry candidates. A steady temperature remains healthy while acquisition sequence advances. Use `--scenario frozen`, `bad`, `uncertain` or `process-fault` on a new server run to investigate other conditions. Stop the previous server before starting another on the same port. Use a new output filename for each run: evidence is never silently overwritten.
+
+The teaching endpoint is restricted to loopback. Client writes are rejected; no physical equipment is connected. This is an OPC UA client/server subscription demonstration, not OPC UA PubSub. See [how-to and troubleshooting](docs/opcua/OPCUA_GUIDE.md).
 
 ## Architecture
 
-```
-OT LAYER
-  sim/modbus_sim        Modbus TCP :1502  (7 stations: furnace, press, quench, cooling, stretcher, saw, ageing)
-
-COLLECTION
-  services/collector    Polls Modbus → publishes MQTT
-                        Topics: iiot/v1/telemetry/{site}/{line}/{asset}/{signal}
-                                iiot/v1/events/{site}/{line}/{asset}/{event_type}
-
-MESSAGING
-  infra/mosquitto       Eclipse Mosquitto, ACL auth  (Tier 1/2)
-                        → EMQX cluster               (Tier 3)
-
-PROCESSING  (parallel MQTT subscribers)
-  services/ingestor     Schema validate → batch write → TimescaleDB
-  services/alerting     3-layer detect → deduplicate → route → TimescaleDB + webhook
-
-STORAGE
-  TimescaleDB           telemetry · events · alerts · alert_rules · sites · asset_metadata
-                        Views: v_asset_current_state · v_recent_alerts · v_kpi_summary
-                               v_aluminium_line_current_state · v_aluminium_decision_board
-                               v_aluminium_quality_risk · v_aluminium_business_risk
-
-API
-  services/api          FastAPI + Uvicorn
-                        REST  GET  /api/v1/assets  /assets/{id}/telemetry  /alerts  /kpis  /sites
-                              POST /api/v1/alerts/{id}/acknowledge
-                        SSE   GET  /api/v1/stream/telemetry   (2s push)
-                              GET  /api/v1/stream/alerts      (new OPEN alerts)
-                        Auth  X-API-Key header
-                        Serves compiled frontend at /
-
-FRONTEND
-  frontend/             Svelte 5, compiled vanilla JS
-                        /           Application shell + Executive View navigation
-                        /dashboard  Executive dashboard — aluminium scenario banner, actions, floor map
-                        /assets     Asset browser + signal history chart
-                        /alerts     Alert inbox + acknowledge
-                        /kpis       OEE + production KPIs
-                        /admin      Threshold editor + API key
-
-VISUALIZATION
-  Grafana :3000         Aluminium Profile Decision Board (primary live demo surface)
+```text
+Legacy path: seven-station fictional aluminium Modbus simulator
+                  → existing Modbus collector ───────────────┐
+                                                            ↓
+Optional path: fictional furnace OPC UA server → client → MQTT
+                                                            ↓
+                               existing ingestor / alerting services
+                                                            ↓
+                                                   TimescaleDB
+                                                            ↓
+                                              FastAPI / Grafana
 ```
 
-**Scale tiers — no code rewrites, only config changes:**
+Select one collector path per asset/run. The OPC UA overlay replaces the default collector; it does not add a competing furnace publisher. Equipment state and data quality are independent: an over-temperature fault can have Good-quality measurements.
 
-| | Tier 1 (now) | Tier 2 | Tier 3 |
-|--|---|---|---|
-| Devices | < 10 | 10–100 | 100+ |
-| Sites | 1 | 1–3 | Multi-site |
-| MQTT | Mosquitto | Mosquitto + bridge | EMQX cluster |
-| Deploy | `docker compose up` | `docker compose -f dc.yml -f dc.multi.yml up` | `helm install nexus ./helm/nexus` |
+Raw OPC UA status/timestamps stay in diagnostic JSONL because existing telemetry v2 does not allow extra fields. Bad/Uncertain, malformed or stale observations are suppressed, rather than converted to zero or falsely labelled fresh. No atomic multi-node snapshot or lossless delivery guarantee is claimed.
 
----
+## Existing stack and optional OPC UA mode
 
-## Tech Stack
+With Docker Compose available, the existing Modbus demonstration remains:
 
-| Layer | Technology | Why |
-|-------|-----------|-----|
-| Protocol | Modbus TCP | Most common in Penang manufacturing legacy equipment |
-| Messaging | MQTT / Mosquitto | Lightweight, proven IIoT standard, QoS 1 |
-| Backend | Python 3.13, FastAPI | Async, auto-generated OpenAPI docs, type-safe |
-| Database | TimescaleDB (PostgreSQL) | SQL + time-series, 3.5× faster than InfluxDB at high cardinality, native JOINs for shifts/assets |
-| Frontend | Svelte 5 + Vite | Compiles to vanilla JS, ~5× smaller bundle than React, SSE-native |
-| Alerting | scikit-learn IsolationForest | Zero cloud dependency, explainable, works fully offline |
-| Orchestration | Docker Compose → Helm | Single command at every scale tier |
-| CI/CD | GitHub Actions | Automated lint + test + build on every push |
-| Topic naming | ISA-95 hierarchy | Industry standard: `{site}/{line}/{asset}/{signal}` |
-
----
-
-## Live Demo Surfaces
-
-The current aluminium demo is designed to be shown in two tabs:
-
-- Grafana: `http://localhost:3000` → **Aluminium Profile Decision Board**
-- Web app: `http://localhost:8080/` → open **Executive View** from the sidebar
-
-Flagship scenario:
-
-- `QUALITY_HOLD_QUENCH`
-- quench flow drops below spec
-- exit temperature rises above the T5/T6 window
-- Grafana shows the management action board
-- Svelte shows the executive summary and floor-map impact
-
----
-
-## Quick Start
-
-```bash
-# 1. Clone and configure
-git clone https://github.com/SaladinIART/salbotics-iiot-aluminium-demo.git
-cd salbotics-iiot-aluminium-demo
-cp .env.example .env        # review and adjust passwords
-
-# 2. Start the full stack
-docker compose up --build
-
-# 3. Open dashboards
-#    Grafana decision board      →  http://localhost:3000   (admin / change_me_now)
-#    NEXUS web app               →  http://localhost:8080
-#    API docs (Swagger)          →  http://localhost:8080/docs
+```sh
+docker compose up --build -d
 ```
 
-Verify data is flowing:
+For the OPC UA collector instead:
 
-```bash
-docker compose exec timescaledb psql -U iiot -d iiot \
-  -c "SELECT asset, signal, value, ts FROM telemetry ORDER BY ts DESC LIMIT 10;"
+```sh
+docker compose -f docker-compose.yml -f docker-compose.opcua.yml up --build -d
 ```
 
----
+- Grafana: `http://localhost:3000` — **NEXUS OPC UA — accepted-data health** dashboard.
+- FastAPI: `http://localhost:8080/docs`.
+- Existing Svelte views are retained as frozen legacy; no frontend expansion is part of this update.
+- OPC UA server/client communicate over loopback inside the collector container. No unsecured OPC UA port is exposed.
+- Example credentials are local-demo placeholders. The existing stack is not a production deployment profile; review [security notes](SECURITY_PROFILE.md).
+- `docker-compose.opcua.yml` is opt-in. The client-only CLI does not start a broker or database.
 
-## Project Structure
+To return to Modbus mode, stop the OPC UA configuration first, then start the base configuration. Keep evidence volumes unless you intentionally want to remove retained runs. Full instructions, environment configuration and verification commands are in the [guide](docs/opcua/OPCUA_GUIDE.md).
 
-```
-salbotics-iiot-aluminium-demo/
-├── contracts/              JSON schemas + MQTT topic contract
-├── db/migrations/          TimescaleDB schema (hypertables, views, alerts)
-├── docs/
-│   ├── architecture.md     Full system diagram and data flow
-│   ├── adr/                Architecture Decision Records (why each tech was chosen)
-│   └── runbooks/           Step-by-step operational guides
-├── frontend/               Svelte 5 app (Phase 4)
-├── helm/nexus/             Kubernetes Helm charts (Phase 8)
-├── infra/
-│   ├── grafana/            Provisioned datasource + dashboards
-│   └── mosquitto/          Broker config + ACL
-├── services/
-│   ├── alerting/           3-layer alert engine (Phase 2)
-│   ├── api/                FastAPI REST + SSE service (Phase 3)
-│   ├── collector/          Modbus → MQTT
-│   └── ingestor/           MQTT → TimescaleDB
-├── sim/modbus_sim/         7-station aluminium line Modbus TCP simulator
-├── src/iiot_stack/         Shared Python library
-├── tests/                  Unit + integration tests
-├── docker-compose.yml      Tier 1 — single host
-├── docker-compose.multi.yml  Tier 2 — multi-site (Phase 6)
-├── PROGRESS.md             Build checklist
-└── pyproject.toml
+## Verify and reproduce
+
+```sh
+ruff check .
+ruff format --check .
+pytest tests/unit -q
+pytest tests/integration/test_opcua_local.py tests/integration/test_opcua_mqtt.py -q
+python tools/run_opcua_study.py --output tmp/my-opcua-study
 ```
 
----
+The study runner launches separate server/client processes for six scenarios, retains actual observations and writes a hash manifest. It never generates pretend measured results. The local MQTT test starts an isolated, loopback-only test broker and verifies actual delivery/outage/recovery; it does not exercise TimescaleDB.
 
-## Development
+CI also runs `tools/verify_opcua_stack.py` against the OPC UA Compose configuration to match an acknowledged payload to its database row and Grafana data-source response, and check FastAPI. Read the actual [Actions result](https://github.com/SaladinIART/IIoT-Telemetry-Stack/actions), not this description, as evidence of a passing run. Historical screenshots are not proof that the current stack was rerun.
 
-```bash
-python -m venv .venv
-.venv\Scripts\Activate.ps1          # Windows
-source .venv/bin/activate            # Linux/macOS
-pip install -e ".[dev]"
+## Repository map
 
-pytest tests/unit                    # fast unit tests
-pytest tests/integration -m integration  # requires Docker
-```
+| Path | Purpose |
+| --- | --- |
+| `src/iiot_stack/opcua_*.py` | Model, simulated server, client, mapping/freshness and MQTT sink |
+| `contracts/` | Existing equipment register map and telemetry/event schemas |
+| `services/` | Existing Modbus collector, ingestion, alerting and API; optional OPC UA container |
+| `infra/grafana/` | Existing dashboards plus OPC UA accepted-data health |
+| `docs/opcua/` | Study plan, guide, condition report and retained experiments |
+| `docs/wiki/` | Version-controlled sources for GitHub wiki pages |
+| `docs/career-readiness/` | Preserved earlier offline baseline and findings |
+| `frontend/` | Frozen Svelte source and historical built assets |
 
----
+## NEXUS consolidation
 
-## Documentation
+The original repository already contained NEXUS. Its `99f4404` history was an ancestor of the aluminium demo at `8e50fbc`; the later local diagnostic baseline was `fb430f5`. This update imports that descendant history and adds the OPC UA extension here. The [aluminium demo repository](https://github.com/SaladinIART/salbotics-iiot-aluminium-demo) remains preserved; new NEXUS work belongs here. No repository was deleted or force-pushed.
 
-| Document | Description |
-|----------|-------------|
-| [Architecture](docs/architecture.md) | Full system diagram, data flow, component responsibilities |
-| [ADR-001 TimescaleDB](docs/adr/001-timescaledb-over-influxdb.md) | Why TimescaleDB over InfluxDB |
-| [ADR-002 FastAPI + Svelte](docs/adr/002-fastapi-svelte-frontend.md) | Why FastAPI + Svelte |
-| [ADR-003 Alert design](docs/adr/003-alert-three-layer.md) | 3-layer alert architecture |
-| [ADR-004 MQTT topics](docs/adr/004-isa95-topic-hierarchy.md) | ISA-95 topic naming convention |
-| [Aluminium line spec](docs/demo/aluminium_profile_line_spec.md) | Demo domain model, scenarios, and station semantics |
-| [Quickstart runbook](docs/runbooks/01-quickstart.md) | Zero to running stack |
-| [Add a new asset](docs/runbooks/02-adding-new-asset.md) | Extend to new equipment |
-| [Tune alerts](docs/runbooks/03-alert-tuning.md) | Threshold and ML configuration |
-| [Scale to Tier 2](docs/runbooks/04-scaling-to-tier2.md) | Multi-site Docker Compose |
-| [Scale to Tier 3](docs/runbooks/05-scaling-to-tier3.md) | Kubernetes + EMQX |
-| [API Reference](docs/api-reference.md) | All REST + SSE endpoints |
-| [Data Model](docs/data-model.md) | All tables, views, indexes, and useful queries |
-
----
-
-## Build Progress
-
-See [PROGRESS.md](PROGRESS.md) for the current build checklist.
-
----
-
-## Background
-
-Built during a career transition period (Sept 2025 – Apr 2026) as a practical extension of real IIoT work done at Alumac Industries — a power monitoring system across 17 machines locations. This project does the same thing, properly: with Docker, CI/CD, structured contracts, and a real user interface.
-
----
-
-*Built by Salbotics Solutions, Penang*
+Built by [Muhamad Solehuddin](https://github.com/SaladinIART) — Salbotics Solutions.

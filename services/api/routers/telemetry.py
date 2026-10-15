@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Annotated
 
 import psycopg
@@ -33,11 +33,11 @@ def get_telemetry(
     conn: Annotated[psycopg.Connection, Depends(get_conn)],
     signal: str | None = Query(None),
     from_ts: datetime = Query(
-        default_factory=lambda: datetime(2000, 1, 1, tzinfo=timezone.utc),
+        default_factory=lambda: datetime(2000, 1, 1, tzinfo=UTC),
         alias="from",
     ),
     to_ts: datetime = Query(
-        default_factory=lambda: datetime(2100, 1, 1, tzinfo=timezone.utc),
+        default_factory=lambda: datetime(2100, 1, 1, tzinfo=UTC),
         alias="to",
     ),
     limit: int = Query(500, ge=1, le=5000),

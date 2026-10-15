@@ -3,8 +3,10 @@ name: CI
 on:
   push:
     branches: ["**"]
+    paths-ignore: ["docs/**", "**/*.md"]
   pull_request:
     branches: ["**"]
+    paths-ignore: ["docs/**", "**/*.md"]
 
 jobs:
   lint-and-test:
@@ -21,7 +23,7 @@ jobs:
           cache: pip
 
       - name: Install Python dependencies
-        run: pip install -e ".[dev]"
+        run: pip install -e ".[dev,opcua,opcua-test]"
 
       - name: Ruff lint
         run: ruff check .
@@ -31,6 +33,43 @@ jobs:
 
       - name: Unit tests
         run: pytest tests/unit/ -v --tb=short
+
+      - name: Local OPC UA and MQTT integration tests (real loopback traffic)
+        run: pytest tests/integration/test_opcua_local.py tests/integration/test_opcua_mqtt.py -v --tb=short
+
+      - name: Upload OPC UA test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opcua-test-evidence
+          path: /tmp/pytest-of-runner/
+          retention-days: 7
+
+  opcua-stack:
+    name: OPC UA Stack Trace
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Start isolated simulated stack with OPC UA collector
+        run: docker compose -f docker-compose.yml -f docker-compose.opcua.yml up -d --build
+      - name: Trace real OPC UA data through MQTT, database, API and Grafana
+        run: python tools/verify_opcua_stack.py --output tmp/stack-evidence
+      - name: Retain stack evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opcua-stack-evidence
+          path: tmp/stack-evidence/
+      - name: Stack diagnostics
+        if: failure()
+        run: docker compose -f docker-compose.yml -f docker-compose.opcua.yml logs --tail=100
+      - name: Stop isolated CI stack
+        if: always()
+        run: docker compose -f docker-compose.yml -f docker-compose.opcua.yml down -v
 
   svelte-build:
     name: Frontend Build

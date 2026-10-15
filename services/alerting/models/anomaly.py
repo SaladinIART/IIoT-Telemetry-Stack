@@ -43,8 +43,7 @@ class AnomalyScorer:
             self._samples = self._samples[-self.refit_every :]
         # Refit on first milestone and every refit_every samples thereafter
         if self._total_seen == self.min_samples or (
-            self._total_seen > self.min_samples
-            and self._total_seen % self.refit_every == 0
+            self._total_seen > self.min_samples and self._total_seen % self.refit_every == 0
         ):
             self._refit()
 

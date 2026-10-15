@@ -1,0 +1,4 @@
+# Retained experiment evidence must survive clone/checkout byte-for-byte.
+/docs/opcua/evidence/** -text
+/src/iiot_stack/opcua_*.py text eol=lf
+/tools/run_opcua_study.py text eol=lf

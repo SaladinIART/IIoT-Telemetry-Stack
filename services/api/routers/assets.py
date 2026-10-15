@@ -42,7 +42,9 @@ def get_asset(asset_id: str, conn: Annotated[psycopg.Connection, Depends(get_con
     return row
 
 
-@router.get("/{asset_id}/status", response_model=AssetStatus, dependencies=[Depends(require_api_key)])
+@router.get(
+    "/{asset_id}/status", response_model=AssetStatus, dependencies=[Depends(require_api_key)]
+)
 def get_asset_status(asset_id: str, conn: Annotated[psycopg.Connection, Depends(get_conn)]):
     with conn.cursor(row_factory=psycopg.rows.dict_row) as cur:
         cur.execute(_GET_SQL, (asset_id,))

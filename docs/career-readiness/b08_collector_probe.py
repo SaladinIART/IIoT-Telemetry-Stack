@@ -23,8 +23,8 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
 
-from iiot_stack.industrial import load_assets  # noqa: E402
 import services.collector.app as collector  # noqa: E402
+from iiot_stack.industrial import load_assets  # noqa: E402
 
 
 class StopProbe(BaseException):
@@ -109,14 +109,16 @@ def normal_image():
     for asset in load_assets():
         image[asset["asset_id"]] = {
             s["tag_id"]: (2 if s["tag_id"] == "state_code" else 0)
-            if s["signal_class"] in ("state", "fault") else 10.0
+            if s["signal_class"] in ("state", "fault")
+            else 10.0
             for s in asset["signals"]
         }
     return image
 
 
-def run_scenario(name, mutate, *, connect_ok=True, error_assets=(),
-                 cycles=2, clock_step=1.0, freeze=False):
+def run_scenario(
+    name, mutate, *, connect_ok=True, error_assets=(), cycles=2, clock_step=1.0, freeze=False
+):
     assets = load_assets()
     image = normal_image()
     mutate(image)
@@ -136,18 +138,20 @@ def run_scenario(name, mutate, *, connect_ok=True, error_assets=(),
     rows = []
     for topic, p, retain in mqtt.messages:
         kind = "event" if "event_type" in p else "telemetry"
-        rows.append({
-            "topic": topic,
-            "kind": kind,
-            "asset": p.get("asset"),
-            "state": p.get("state"),
-            "fault_code": p.get("fault_code"),
-            "quality": p.get("quality"),
-            "event_type": p.get("event_type"),
-            "reason_code": p.get("reason_code"),
-            "source_ts": p.get("source_ts"),
-            "ts": p.get("ts"),
-        })
+        rows.append(
+            {
+                "topic": topic,
+                "kind": kind,
+                "asset": p.get("asset"),
+                "state": p.get("state"),
+                "fault_code": p.get("fault_code"),
+                "quality": p.get("quality"),
+                "event_type": p.get("event_type"),
+                "reason_code": p.get("reason_code"),
+                "source_ts": p.get("source_ts"),
+                "ts": p.get("ts"),
+            }
+        )
     return {"scenario": name, "messages": len(rows), "rows": rows}
 
 
@@ -157,17 +161,26 @@ def summarize(sc, asset=None):
     for r in sc["rows"]:
         if asset and r["asset"] != asset:
             continue
-        key = (r["kind"], r["state"], r["fault_code"], r["quality"],
-               r["event_type"], r["reason_code"])
+        key = (
+            r["kind"],
+            r["state"],
+            r["fault_code"],
+            r["quality"],
+            r["event_type"],
+            r["reason_code"],
+        )
         if key not in seen:
             seen.append(key)
-    return [dict(zip(("kind", "state", "fault_code", "quality", "event_type",
-                      "reason_code"), k)) for k in seen]
+    return [
+        dict(zip(("kind", "state", "fault_code", "quality", "event_type", "reason_code"), k))
+        for k in seen
+    ]
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--output", type=Path, required=True)
     a = ap.parse_args(argv)
     if a.output.exists():
@@ -186,14 +199,18 @@ def main(argv=None):
         run_scenario("normal", lambda i: None),
         run_scenario("equipment_fault_burner_trip", fault),
         run_scenario("maintenance_state", maintenance),
-        run_scenario("transport_modbus_connect_failed", lambda i: None,
-                     connect_ok=False, cycles=1),
-        run_scenario("transport_read_error_one_asset", lambda i: None,
-                     error_assets=[load_assets()[1]["asset_id"]], cycles=1),
+        run_scenario("transport_modbus_connect_failed", lambda i: None, connect_ok=False, cycles=1),
+        run_scenario(
+            "transport_read_error_one_asset",
+            lambda i: None,
+            error_assets=[load_assets()[1]["asset_id"]],
+            cycles=1,
+        ),
         # Source registers never change while the clock advances 5 minutes
         # per poll: the data are "frozen" but every value is re-stamped.
-        run_scenario("frozen_source_values_clock_advances", lambda i: None,
-                     cycles=3, clock_step=300.0),
+        run_scenario(
+            "frozen_source_values_clock_advances", lambda i: None, cycles=3, clock_step=300.0
+        ),
     ]
     out = {
         "probe": "B08 collector component probe",
@@ -203,9 +220,12 @@ def main(argv=None):
         "scenarios": [],
     }
     for sc in scenarios:
-        entry = {"scenario": sc["scenario"], "messages": sc["messages"],
-                 "distinct_for_asset_under_test": summarize(sc, first),
-                 "distinct_all_assets": summarize(sc)}
+        entry = {
+            "scenario": sc["scenario"],
+            "messages": sc["messages"],
+            "distinct_for_asset_under_test": summarize(sc, first),
+            "distinct_all_assets": summarize(sc),
+        }
         if sc["scenario"].startswith("frozen"):
             tele = [r for r in sc["rows"] if r["asset"] == first and r["kind"] == "telemetry"]
             stamps = sorted({r["source_ts"] for r in tele if r["source_ts"] is not None})

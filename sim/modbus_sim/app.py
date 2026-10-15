@@ -6,14 +6,13 @@ import struct
 import threading
 import time
 
+import scenario_api
+import scenario_state
 from pymodbus.datastore import ModbusSequentialDataBlock, ModbusServerContext, ModbusSlaveContext
 from pymodbus.server import StartTcpServer
 
 from iiot_stack.industrial import load_assets
 from iiot_stack.logging_utils import configure_logging
-import scenario_state
-import scenario_api
-
 
 LOG = logging.getLogger("modbus_sim")
 
@@ -53,13 +52,47 @@ def serve() -> None:
     # 90-second cycling scenario windows (used when no scenario lock is active).
     # Pattern per station: brief STARTUP → long RUNNING → short FAULT → RUNNING → brief MAINT → RUNNING.
     scenario_windows = {
-        "furnace-01":   [(0,  6, 1, 0), (6,  38, 2, 0), (38, 45, 3, 111), (45, 62, 2, 0), (62, 70, 4, 0),   (70, 90, 2, 0)],
-        "press-01":     [(0,  8, 1, 0), (8,  40, 2, 0), (40, 48, 3, 211), (48, 66, 2, 0), (66, 74, 4, 0),   (74, 90, 2, 0)],
-        "quench-01":    [(0,  5, 1, 0), (5,  42, 2, 0), (42, 48, 3, 311), (48, 68, 2, 0), (68, 90, 2, 0)],
-        "cooling-01":   [(0,  4, 1, 0), (4,  44, 2, 0), (44, 50, 3, 411), (50, 90, 2, 0)],
-        "stretcher-01": [(0,  7, 1, 0), (7,  36, 2, 0), (36, 44, 3, 511), (44, 60, 2, 0), (60, 68, 4, 0),   (68, 90, 2, 0)],
-        "saw-01":       [(0,  5, 1, 0), (5,  40, 2, 0), (40, 47, 3, 611), (47, 64, 2, 0), (64, 72, 4, 0),   (72, 90, 2, 0)],
-        "ageing-01":    [(0, 10, 1, 0), (10, 50, 2, 0), (50, 57, 3, 711), (57, 90, 2, 0)],
+        "furnace-01": [
+            (0, 6, 1, 0),
+            (6, 38, 2, 0),
+            (38, 45, 3, 111),
+            (45, 62, 2, 0),
+            (62, 70, 4, 0),
+            (70, 90, 2, 0),
+        ],
+        "press-01": [
+            (0, 8, 1, 0),
+            (8, 40, 2, 0),
+            (40, 48, 3, 211),
+            (48, 66, 2, 0),
+            (66, 74, 4, 0),
+            (74, 90, 2, 0),
+        ],
+        "quench-01": [
+            (0, 5, 1, 0),
+            (5, 42, 2, 0),
+            (42, 48, 3, 311),
+            (48, 68, 2, 0),
+            (68, 90, 2, 0),
+        ],
+        "cooling-01": [(0, 4, 1, 0), (4, 44, 2, 0), (44, 50, 3, 411), (50, 90, 2, 0)],
+        "stretcher-01": [
+            (0, 7, 1, 0),
+            (7, 36, 2, 0),
+            (36, 44, 3, 511),
+            (44, 60, 2, 0),
+            (60, 68, 4, 0),
+            (68, 90, 2, 0),
+        ],
+        "saw-01": [
+            (0, 5, 1, 0),
+            (5, 40, 2, 0),
+            (40, 47, 3, 611),
+            (47, 64, 2, 0),
+            (64, 72, 4, 0),
+            (72, 90, 2, 0),
+        ],
+        "ageing-01": [(0, 10, 1, 0), (10, 50, 2, 0), (50, 57, 3, 711), (57, 90, 2, 0)],
     }
 
     counters = {asset["asset_id"]: 0 for asset in assets}
@@ -71,7 +104,9 @@ def serve() -> None:
                 return state_code, fault_code
         return 2, 0
 
-    def analog_values(asset_id: str, elapsed: float, state_code: int, fault_code: int) -> tuple[float, float]:
+    def analog_values(
+        asset_id: str, elapsed: float, state_code: int, fault_code: int
+    ) -> tuple[float, float]:
         """Produce (primary, secondary) analog values centred within the register_map warn band.
 
         Fault codes push signals out of spec in physically plausible directions.

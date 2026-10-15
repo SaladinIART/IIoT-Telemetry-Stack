@@ -1,0 +1,118 @@
+{
+  "contract_version": 1,
+  "status": "IMPLEMENTED_LOCAL_PROTOCOL_TESTS_FULL_STACK_PENDING",
+  "evidence_label": "Requirement",
+  "date": "2026-10-15",
+  "source_revision": "fb430f567cd7a7b4b1f8a0bec3e341741b8d97d5",
+  "source_sha256": {
+    "contracts/register_map.json": "ccc63544967951d569bcfbe0bc7a294fbf242c65e49e5d83c6433b005ceefcc7",
+    "contracts/telemetry_payload.schema.json": "867ed64fe8938a34d3b6a0a739a06ea49705c03443c1e65bfd6fc400658f38da",
+    "contracts/event_payload.schema.json": "5770ca21b63c7f5ddb6e9b7690acdbc39a3d04e7dc77d40fc636dc6540d18826",
+    "src/iiot_stack/telemetry.py": "88a05c31bd164b2ed5de46bf8396620f8141bbc4d4eefbf4f187228bab758d94",
+    "services/collector/app.py": "87b8bd4b14817313dc5d22feb9a847b4559737d1521dd4e81b365e0a66d04a2d",
+    "pyproject.toml": "bfca22ab0f05f9f0774289743ee4a779f1274b5f3d56c70fa640a95fca871568"
+  },
+  "namespace_uri": "urn:salbotics:nexus:opcua:demo",
+  "namespace_index_policy": "Resolve by URI at runtime; do not hardcode an index",
+  "endpoint_assumption": "opc.tcp://127.0.0.1:4840/nexus/",
+  "security_profile": "Unsecured loopback teaching profile only; no production security claim",
+  "object_browse_path": [
+    "Objects",
+    "NEXUS",
+    "Furnace01"
+  ],
+  "object_string_node_id": "furnace-01",
+  "asset_id": "furnace-01",
+  "site": "demo-site",
+  "line": "aluminium-profile-line-1",
+  "client_access": "Read-only; client writes must be rejected and tested",
+  "nodes": [
+    {
+      "string_node_id": "furnace-01.billet_temp_c",
+      "browse_name": "BilletTemperature",
+      "ua_type": "Double",
+      "unit": "degC",
+      "telemetry_signal": "billet_temp_c",
+      "limits": {
+        "warn_low": 540.0,
+        "warn_high": 600.0
+      }
+    },
+    {
+      "string_node_id": "furnace-01.preheat_zone_temp_c",
+      "browse_name": "PreheatZoneTemperature",
+      "ua_type": "Double",
+      "unit": "degC",
+      "telemetry_signal": "preheat_zone_temp_c",
+      "limits": {
+        "warn_low": 520.0,
+        "warn_high": 580.0
+      }
+    },
+    {
+      "string_node_id": "furnace-01.billet_loaded_count",
+      "browse_name": "BilletLoadedCount",
+      "ua_type": "UInt32",
+      "unit": "count",
+      "telemetry_signal": "billet_loaded_count"
+    },
+    {
+      "string_node_id": "furnace-01.state_code",
+      "browse_name": "StateCode",
+      "ua_type": "UInt16",
+      "unit": "code",
+      "telemetry_signal": "state_code"
+    },
+    {
+      "string_node_id": "furnace-01.fault_code",
+      "browse_name": "FaultCode",
+      "ua_type": "UInt16",
+      "unit": "code",
+      "telemetry_signal": "fault_code"
+    },
+    {
+      "string_node_id": "furnace-01.acquisition_seq",
+      "browse_name": "AcquisitionSequence",
+      "ua_type": "UInt64",
+      "unit": "count",
+      "telemetry_signal": null,
+      "meaning": "Advances each completed simulated acquisition even if values are unchanged; resets on server restart; not an atomic multi-node snapshot guarantee"
+    }
+  ],
+  "unit_metadata": "Expose the unit strings above as read-only Unit properties; these custom properties do not claim standard AnalogItemType/EUInformation or companion-specification conformance",
+  "state_map": {
+    "0": "IDLE",
+    "1": "STARTUP",
+    "2": "RUNNING",
+    "3": "FAULTED",
+    "4": "MAINTENANCE"
+  },
+  "fault_map": {
+    "0": "NONE",
+    "111": "OVER_TEMPERATURE",
+    "112": "UNDER_TEMPERATURE",
+    "113": "BURNER_TRIP"
+  },
+  "timing_assumptions": {
+    "source_acquisition_ms": 1000,
+    "requested_publish_ms": 500,
+    "acquisition_timeout_ms": 5000,
+    "timeout_clock": "Client monotonic time since acquisition sequence last advanced; require progress after connection"
+  },
+  "mapping": {
+    "target_schema": "contracts/telemetry_payload.schema.json",
+    "target_payload_version": 2,
+    "topic": "iiot/v1/telemetry/{site}/{line}/{asset}/{signal}",
+    "source_ts": "Valid OPC UA SourceTimestamp converted from UTC to integer Unix milliseconds; never substitute emit/receive time",
+    "ts": "Client emission time in Unix milliseconds",
+    "seq": "Collector emission sequence; distinct from acquisition sequence and OPC UA subscription sequence",
+    "good": "Finite correctly typed value, valid SourceTimestamp, Good UA status, valid state/fault metadata for this connection and fresh acquisition",
+    "bad_or_uncertain": "Suppress current numeric telemetry; record raw status and reason in local diagnostics",
+    "stale": "Suppress normal good publication and diagnose acquisition timeout; no fabricated replacement sample",
+    "raw_status": "Separate diagnostic record: v2 forbids extra fields",
+    "equipment_state": "Use state_map independently of source status or connectivity; unknown codes reject publication",
+    "fault_code": "Preserve valid UInt16 equipment code, including unknown codes in diagnostics; do not turn transport failure into equipment fault 999",
+    "snapshot_consistency": "No atomic snapshot claim; stage until required metadata validated and acquisition progress observed"
+  },
+  "source_hashes_purpose": "Historical U01 inputs at fb430f5; current runtime hashes are in retained run-02 manifest"
+}

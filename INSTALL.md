@@ -1,5 +1,7 @@
 # NEXUS IIoT Platform — Installation Guide
 
+> **Current canonical project:** [IIoT-Telemetry-Stack](https://github.com/SaladinIART/IIoT-Telemetry-Stack). Start with the updated [README](README.md) or [OPC UA guide](docs/opcua/OPCUA_GUIDE.md). The guide below predates the OPC UA extension. Check the [condition report](docs/opcua/CONDITION_ASSESSMENT.md) for actual verification scope.
+
 > **Who is this guide for?**
 > This guide is written for anyone — engineers, managers, or students — who wants to run the NEXUS IIoT Platform on their own laptop or PC, even without prior experience in software development or Docker.
 >

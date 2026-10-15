@@ -11,8 +11,12 @@ import psycopg
 from iiot_stack.industrial import fault_severity
 from iiot_stack.logging_utils import configure_logging
 from iiot_stack.settings import IngestorSettings
-from iiot_stack.telemetry import parse_event_topic, parse_telemetry_topic, validate_event_payload, validate_payload
-
+from iiot_stack.telemetry import (
+    parse_event_topic,
+    parse_telemetry_topic,
+    validate_event_payload,
+    validate_payload,
+)
 
 LOG = logging.getLogger("ingestor")
 TOPIC_FILTERS = [("iiot/v1/telemetry/+/+/+/+", 1), ("iiot/v1/events/+/+/+/+", 1)]
@@ -55,7 +59,9 @@ ON CONFLICT DO NOTHING
 
 
 class Ingestor:
-    def __init__(self, settings: IngestorSettings, max_batch: int = 200, max_delay_s: float = 1.0) -> None:
+    def __init__(
+        self, settings: IngestorSettings, max_batch: int = 200, max_delay_s: float = 1.0
+    ) -> None:
         self.settings = settings
         self.max_batch = max_batch
         self.max_delay_s = max_delay_s
@@ -98,14 +104,21 @@ class Ingestor:
                         "event_type": event_type,
                         "state": str(payload["state"]),
                         "fault_code": int(payload["fault_code"]),
-                        "severity": str(payload.get("severity", fault_severity(str(payload["state"]), int(payload["fault_code"])))),
+                        "severity": str(
+                            payload.get(
+                                "severity",
+                                fault_severity(str(payload["state"]), int(payload["fault_code"])),
+                            )
+                        ),
                         "message": str(payload["message"]),
                         "reason_code": payload.get("reason_code"),
                         "seq": int(payload["seq"]),
                     }
                 )
         except Exception as exc:
-            LOG.warning("dropping invalid message", extra={"event": {"topic": msg.topic, "error": str(exc)}})
+            LOG.warning(
+                "dropping invalid message", extra={"event": {"topic": msg.topic, "error": str(exc)}}
+            )
 
     def flush_if_due(self, cur: psycopg.Cursor[Any]) -> None:
         if not self.telemetry_buffer and not self.event_buffer:
@@ -120,7 +133,12 @@ class Ingestor:
             cur.executemany(INSERT_EVENT_SQL, self.event_buffer)
         LOG.info(
             "flushed ingestion batch",
-            extra={"event": {"telemetry_rows": len(self.telemetry_buffer), "event_rows": len(self.event_buffer)}},
+            extra={
+                "event": {
+                    "telemetry_rows": len(self.telemetry_buffer),
+                    "event_rows": len(self.event_buffer),
+                }
+            },
         )
         self.telemetry_buffer.clear()
         self.event_buffer.clear()
@@ -128,7 +146,9 @@ class Ingestor:
 
 
 def connect_mqtt(ingestor: Ingestor) -> mqtt.Client:
-    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="iiot-demo-ingestor", protocol=mqtt.MQTTv311)
+    client = mqtt.Client(
+        mqtt.CallbackAPIVersion.VERSION2, client_id="iiot-demo-ingestor", protocol=mqtt.MQTTv311
+    )
     client.username_pw_set(ingestor.settings.mqtt_user, ingestor.settings.mqtt_password)
     client.on_message = ingestor.on_message
     client.connect(ingestor.settings.mqtt_host, ingestor.settings.mqtt_port, keepalive=30)

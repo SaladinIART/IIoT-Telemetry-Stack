@@ -48,5 +48,6 @@ def require_api_key(key: Annotated[str | None, Security(_api_key_header)]) -> st
 
 # ── settings accessor ─────────────────────────────────────────────────────────
 
+
 def get_settings() -> APISettings:
     return _settings

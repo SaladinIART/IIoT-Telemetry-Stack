@@ -29,7 +29,7 @@ def test_ingestor_buffers_valid_messages() -> None:
                 "quality": "good",
                 "state": "RUNNING",
                 "fault_code": 0,
-                "seq": 9
+                "seq": 9,
             },
         ),
     )
@@ -65,7 +65,7 @@ def test_ingestor_buffers_event_messages() -> None:
                 "fault_code": 301,
                 "severity": "critical",
                 "message": "Conveyor jam detected",
-                "seq": 12
+                "seq": 12,
             },
         ),
     )
@@ -112,7 +112,7 @@ def test_flush_if_due_writes_event_batch() -> None:
             "severity": "critical",
             "message": "Conveyor jam detected",
             "reason_code": "JAM_DETECTED",
-            "seq": 12
+            "seq": 12,
         }
     )
     cur = Mock()

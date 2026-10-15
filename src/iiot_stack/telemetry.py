@@ -9,7 +9,6 @@ from jsonschema import Draft202012Validator
 
 from iiot_stack.contracts import load_event_schema, load_payload_schema
 
-
 telemetry_validator = Draft202012Validator(load_payload_schema())
 event_validator = Draft202012Validator(load_event_schema())
 

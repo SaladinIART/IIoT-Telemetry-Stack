@@ -8,6 +8,7 @@ Prerequisites:
 Run with:
   pytest tests/integration/test_api_endpoints.py -v
 """
+
 from __future__ import annotations
 
 import os
@@ -25,11 +26,13 @@ AUTH = {"X-API-Key": API_KEY}
 @pytest.fixture(scope="module")
 def client():
     from services.api.main import app
+
     with TestClient(app, raise_server_exceptions=True) as c:
         yield c
 
 
 # ── health ────────────────────────────────────────────────────────────────────
+
 
 def test_health(client: TestClient) -> None:
     resp = client.get("/health")
@@ -38,6 +41,7 @@ def test_health(client: TestClient) -> None:
 
 
 # ── auth ──────────────────────────────────────────────────────────────────────
+
 
 def test_missing_api_key_rejected(client: TestClient) -> None:
     resp = client.get("/api/v1/assets")
@@ -50,6 +54,7 @@ def test_wrong_api_key_rejected(client: TestClient) -> None:
 
 
 # ── assets ────────────────────────────────────────────────────────────────────
+
 
 def test_list_assets_returns_list(client: TestClient) -> None:
     resp = client.get("/api/v1/assets", headers=AUTH)
@@ -64,6 +69,7 @@ def test_get_unknown_asset_404(client: TestClient) -> None:
 
 
 # ── alerts ────────────────────────────────────────────────────────────────────
+
 
 def test_list_alerts_returns_list(client: TestClient) -> None:
     resp = client.get("/api/v1/alerts", headers=AUTH)
@@ -86,6 +92,7 @@ def test_acknowledge_nonexistent_alert_404(client: TestClient) -> None:
 
 # ── kpis ──────────────────────────────────────────────────────────────────────
 
+
 def test_kpis_returns_list(client: TestClient) -> None:
     resp = client.get("/api/v1/kpis", headers=AUTH)
     assert resp.status_code == 200
@@ -93,6 +100,7 @@ def test_kpis_returns_list(client: TestClient) -> None:
 
 
 # ── sites ─────────────────────────────────────────────────────────────────────
+
 
 def test_list_sites(client: TestClient) -> None:
     resp = client.get("/api/v1/sites", headers=AUTH)
@@ -105,6 +113,7 @@ def test_list_sites(client: TestClient) -> None:
 
 
 # ── docs ──────────────────────────────────────────────────────────────────────
+
 
 def test_swagger_ui_reachable(client: TestClient) -> None:
     resp = client.get("/docs")

@@ -11,11 +11,20 @@ from services.alerting.rules import AlertRule, RuleLoader
 
 def _make_msg(asset: str, signal: str, value: float, quality: str = "good") -> SimpleNamespace:
     topic = f"iiot/v1/telemetry/demo-site/line-1/{asset}/{signal}"
-    payload = json.dumps({
-        "v": 2, "ts": 1730000000000, "source_ts": 1730000000000,
-        "asset": asset, "signal": signal, "value": value,
-        "quality": quality, "state": "RUNNING", "fault_code": 0, "seq": 1,
-    }).encode("utf-8")
+    payload = json.dumps(
+        {
+            "v": 2,
+            "ts": 1730000000000,
+            "source_ts": 1730000000000,
+            "asset": asset,
+            "signal": signal,
+            "value": value,
+            "quality": quality,
+            "state": "RUNNING",
+            "fault_code": 0,
+            "seq": 1,
+        }
+    ).encode("utf-8")
     return SimpleNamespace(topic=topic, payload=payload)
 
 
@@ -29,9 +38,12 @@ def _make_rule(
 ) -> AlertRule:
     return AlertRule(
         id="00000000-0000-0000-0000-000000000001",
-        asset=asset, signal=signal,
-        warn_low=warn_low, warn_high=warn_high,
-        crit_low=crit_low, crit_high=crit_high,
+        asset=asset,
+        signal=signal,
+        warn_low=warn_low,
+        warn_high=warn_high,
+        crit_low=crit_low,
+        crit_high=crit_high,
     )
 
 
@@ -52,6 +64,7 @@ def _make_detector(rule: AlertRule | None = None) -> tuple[AlertDetector, queue.
 
 
 # ── Layer 1: threshold ───────────────────────────────────────────────────────
+
 
 def test_threshold_fires_warn_low() -> None:
     rule = _make_rule(warn_low=5.0)
@@ -113,6 +126,7 @@ def test_stale_quality_skipped() -> None:
 
 # ── Layer 2: statistical ─────────────────────────────────────────────────────
 
+
 def test_statistical_no_alert_too_few_samples() -> None:
     detector, q = _make_detector(rule=None)
     # Only 5 samples — below the 10-sample minimum
@@ -146,6 +160,7 @@ def test_statistical_no_alert_normal_variation() -> None:
 
 
 # ── Layer 3: ML ──────────────────────────────────────────────────────────────
+
 
 def test_ml_cold_start_no_alert() -> None:
     # Default min_samples=50 — with only 10 messages the scorer is not ready

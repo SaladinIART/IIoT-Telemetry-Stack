@@ -1,0 +1,8 @@
+{
+  "description": "Actual local tests and traces; summary omits host metadata; no equipment measurements",
+  "files": {
+    "mqtt.jsonl": "f600f1ba696848e4ebfd8dd5951deee10d126d2ac3767358dd6c6e91d29eb578",
+    "reconnect.jsonl": "78673e2b66335fa6a0938f79c0fe6aa2f95f7ad5ebe0753d0f893b9325c1404c",
+    "tests_summary.json": "3186c6ede1268a87d644b2cfc12766e7078444cf6bd732c7597f9e762e268aca"
+  }
+}

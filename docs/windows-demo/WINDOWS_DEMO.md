@@ -110,13 +110,13 @@ Scenarios auto-reset to `NORMAL` after 10 minutes, so a forgotten demo won't sit
 Tags: **[MES]** = manufacturing IT / ERP-adjacent · **[OT]** = IIoT / shop-floor / PLC · **[PLAT]** = full-stack / platform / DevOps
 
 **Q. Is this real factory data?**  *[MES] [OT]*
-No — it's a Modbus TCP simulator emulating a real 7-station aluminium extrusion line (furnace → press → quench → cooling → stretcher → saw → ageing). The shape of the data, the register map, and the fault behaviour all mirror equipment I worked with at Alumac Industries (17-machine power monitoring rollout). The protocol layer is identical to production; the *equipment* is the simulated part.
+No. This is an independently invented seven-station aluminium scenario (furnace → press → quench → cooling → stretcher → saw → ageing). Equipment inputs and faults are simulated. No employer/customer measurements or register maps are used. Real local protocol traffic does not establish physical commissioning or production suitability.
 
 **Q. Could this connect to a real PLC tomorrow?**  *[OT]*
-Yes. The collector talks raw Modbus TCP to whatever responds on the host:port in `.env`. Swap `MODBUS_HOST=modbus_sim` for the IP of an actual Schneider / Siemens / Allen-Bradley gateway, update the register map in `contracts/`, restart — no code change needed.
+A future authorized integration could reuse the collector architecture, but would need the device-specific register map, scaling/type checks, network/access approval and physical testing. The current case connects only to simulated equipment; do not point demo defaults at a real PLC.
 
-**Q. Why MQTT instead of OPC-UA?**  *[OT] [MES]*
-MQTT is the lightest-weight pub/sub that almost every modern broker speaks. OPC-UA is the formal standard for the ISA-95 stack but it's heavy and the licensing story is messy on the cloud side. MQTT + ISA-95 topic hierarchy (`iiot/v1/telemetry/{site}/{line}/{asset}/{signal}`) gives you 80% of the OPC-UA discoverability with 20% of the operational pain. See [ADR-004](../adr/004-isa95-topic-hierarchy.md).
+**Q. How do MQTT and OPC UA fit together?** *[OT] [MES]*
+The new read-only OPC UA extension browses typed equipment data and subscribes to changes upstream. It maps accepted observations to existing MQTT topics downstream. MQTT topics alone do not provide OPC UA browsing, type metadata or DataValue semantics. See the current [OPC UA guide](../opcua/OPCUA_GUIDE.md) and its evidence limits.
 
 **Q. Why TimescaleDB and not InfluxDB?**  *[MES] [PLAT]*
 Three reasons: (1) it's PostgreSQL underneath, so I can JOIN telemetry to a `shifts` or `assets` table without exporting CSVs; (2) at high cardinality it's ~3.5× faster than Influx on the queries this project actually needs; (3) one operational toolchain — backup, replication, monitoring — instead of two. Full reasoning in [ADR-001](../adr/001-timescaledb-over-influxdb.md).

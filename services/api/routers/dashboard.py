@@ -3,6 +3,7 @@
 Aggregates asset states, business impact, maintenance status, and order risk
 into a single response designed for the Executive Dashboard frontend page.
 """
+
 from __future__ import annotations
 
 import os
@@ -32,32 +33,32 @@ _SIM_BASE = os.getenv("MODBUS_SIM_API", "http://modbus-sim:5001")
 # MTTR estimates per fault code (minutes) — informed by maintenance_log history.
 # Keys match fault_map values in contracts/register_map.json.
 _MTTR_MAP = {
-    111: 60,   # furnace OVER_TEMPERATURE    — recalibrate zone thermocouples
-    112: 45,   # furnace UNDER_TEMPERATURE   — recover setpoint
+    111: 60,  # furnace OVER_TEMPERATURE    — recalibrate zone thermocouples
+    112: 45,  # furnace UNDER_TEMPERATURE   — recover setpoint
     113: 240,  # furnace BURNER_TRIP         — igniter/burner inspection
     211: 120,  # press EXTRUSION_OVERLOAD    — die inspection / regrind
-    212: 60,   # press BILLET_JAM            — clear + alignment check
+    212: 60,  # press BILLET_JAM            — clear + alignment check
     219: 300,  # press EMERGENCY_TRIP        — full safety interlock cycle
-    311: 30,   # quench QUENCH_FLOW_LOW      — strainer / nozzle clean
-    312: 45,   # quench QUENCH_TEMP_HIGH     — chiller coil check
-    411: 30,   # cooling TABLE_HOT           — clear blocked air intake
-    412: 45,   # cooling AIR_FLOW_LOW        — filter replace
-    511: 30,   # stretcher SLIP              — jaw reface
-    512: 60,   # stretcher FORCE_HIGH        — load cell recal
-    611: 45,   # saw BLADE_WEAR              — blade change
-    612: 30,   # saw CUT_LENGTH_DEVIATION    — encoder/gauge calibration
-    711: 90,   # ageing AGE_TEMP_DEVIATION   — heater element / circulation
-    712: 60,   # ageing AGE_DWELL_SHORT      — door seal / dwell timer
+    311: 30,  # quench QUENCH_FLOW_LOW      — strainer / nozzle clean
+    312: 45,  # quench QUENCH_TEMP_HIGH     — chiller coil check
+    411: 30,  # cooling TABLE_HOT           — clear blocked air intake
+    412: 45,  # cooling AIR_FLOW_LOW        — filter replace
+    511: 30,  # stretcher SLIP              — jaw reface
+    512: 60,  # stretcher FORCE_HIGH        — load cell recal
+    611: 45,  # saw BLADE_WEAR              — blade change
+    612: 30,  # saw CUT_LENGTH_DEVIATION    — encoder/gauge calibration
+    711: 90,  # ageing AGE_TEMP_DEVIATION   — heater element / circulation
+    712: 60,  # ageing AGE_DWELL_SHORT      — door seal / dwell timer
 }
 
 # Mapped from decision_board_rules.owner → RecommendedAction.owner (normalised uppercase enum)
 _OWNER_TO_ENUM = {
-    "Plant Manager":     "MANAGEMENT",
-    "Shift Supervisor":  "MANAGEMENT",
-    "Quality":           "PRODUCTION",
-    "Maintenance":       "MAINTENANCE",
-    "Operator":          "PRODUCTION",
-    "Logistics":         "LOGISTICS",
+    "Plant Manager": "MANAGEMENT",
+    "Shift Supervisor": "MANAGEMENT",
+    "Quality": "PRODUCTION",
+    "Maintenance": "MAINTENANCE",
+    "Operator": "PRODUCTION",
+    "Logistics": "LOGISTICS",
 }
 
 # Priority (P1/P2/P3) → urgency enum expected by RecommendedAction schema
@@ -71,39 +72,57 @@ _PRIORITY_TO_URGENCY = {
 # or a scenario name that hasn't been seeded yet). Keeps the schema valid.
 _FALLBACK_ACTIONS: dict[str, list[dict]] = {
     "NORMAL": [
-        {"urgency": "INFO", "owner": "MANAGEMENT",
-         "action": "All systems nominal — continue planned production run."},
+        {
+            "urgency": "INFO",
+            "owner": "MANAGEMENT",
+            "action": "All systems nominal — continue planned production run.",
+        },
     ],
     "QUALITY_HOLD_QUENCH": [
-        {"urgency": "URGENT", "owner": "PRODUCTION",
-         "action": "Quench flow anomaly — check Decision Board in Grafana."},
+        {
+            "urgency": "URGENT",
+            "owner": "PRODUCTION",
+            "action": "Quench flow anomaly — check Decision Board in Grafana.",
+        },
     ],
     "PRESS_BOTTLENECK": [
-        {"urgency": "IMMEDIATE", "owner": "MAINTENANCE",
-         "action": "Press overload — dispatch maintenance, check Decision Board."},
+        {
+            "urgency": "IMMEDIATE",
+            "owner": "MAINTENANCE",
+            "action": "Press overload — dispatch maintenance, check Decision Board.",
+        },
     ],
     "STRETCHER_BACKLOG": [
-        {"urgency": "URGENT", "owner": "MAINTENANCE",
-         "action": "Stretcher offline — check Decision Board in Grafana."},
+        {
+            "urgency": "URGENT",
+            "owner": "MAINTENANCE",
+            "action": "Stretcher offline — check Decision Board in Grafana.",
+        },
     ],
     "AGEING_OVEN_DEVIATION": [
-        {"urgency": "URGENT", "owner": "PRODUCTION",
-         "action": "Ageing oven out of spec — check Decision Board in Grafana."},
+        {
+            "urgency": "URGENT",
+            "owner": "PRODUCTION",
+            "action": "Ageing oven out of spec — check Decision Board in Grafana.",
+        },
     ],
     "EMERGENCY_PRESS_TRIP": [
-        {"urgency": "IMMEDIATE", "owner": "MANAGEMENT",
-         "action": "Press emergency trip — invoke BCP immediately."},
+        {
+            "urgency": "IMMEDIATE",
+            "owner": "MANAGEMENT",
+            "action": "Press emergency trip — invoke BCP immediately.",
+        },
     ],
 }
 
 _ASSET_ICONS = {
-    "furnace":   "homogenisation_furnace",
-    "press":     "extrusion_press",
-    "quench":    "water_quench",
-    "cooling":   "cooling_table",
+    "furnace": "homogenisation_furnace",
+    "press": "extrusion_press",
+    "quench": "water_quench",
+    "cooling": "cooling_table",
     "stretcher": "profile_stretcher",
-    "saw":       "finish_saw",
-    "ageing":    "ageing_oven",
+    "saw": "finish_saw",
+    "ageing": "ageing_oven",
 }
 
 _ASSET_SQL = """
@@ -235,8 +254,16 @@ def get_dashboard(conn: Annotated[psycopg.Connection, Depends(get_conn)]) -> Das
     )
 
     # ── Maintenance ───────────────────────────────────────────────────────────
-    healthy = sum(1 for r in asset_rows if r["state"] not in ("FAULTED", "MAINTENANCE") and r.get("pm_risk") == "LOW")
-    at_risk_pm = sum(1 for r in asset_rows if r.get("pm_risk") in ("MEDIUM", "HIGH") and r["state"] not in ("FAULTED", "MAINTENANCE"))
+    healthy = sum(
+        1
+        for r in asset_rows
+        if r["state"] not in ("FAULTED", "MAINTENANCE") and r.get("pm_risk") == "LOW"
+    )
+    at_risk_pm = sum(
+        1
+        for r in asset_rows
+        if r.get("pm_risk") in ("MEDIUM", "HIGH") and r["state"] not in ("FAULTED", "MAINTENANCE")
+    )
 
     # Estimate MTTR from the worst active fault code
     mttr_estimate = None

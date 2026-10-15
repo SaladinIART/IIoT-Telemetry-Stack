@@ -97,9 +97,7 @@ class AlertDetector:
 
     # ── detection layers ─────────────────────────────────────────────────────
 
-    def _check_threshold(
-        self, asset: str, signal: str, value: float
-    ) -> dict[str, Any] | None:
+    def _check_threshold(self, asset: str, signal: str, value: float) -> dict[str, Any] | None:
         rule: AlertRule | None = self._rules.get(asset, signal)
         if rule is None:
             return None
@@ -107,23 +105,47 @@ class AlertDetector:
         # Critical band takes precedence over warning band
         if rule.crit_low is not None and value < rule.crit_low:
             return _make_alert(
-                "threshold", "critical", asset, signal, value, rule.crit_low,
-                f"{signal} {value:.3g} below critical low {rule.crit_low:.3g}", rule.id,
+                "threshold",
+                "critical",
+                asset,
+                signal,
+                value,
+                rule.crit_low,
+                f"{signal} {value:.3g} below critical low {rule.crit_low:.3g}",
+                rule.id,
             )
         if rule.crit_high is not None and value > rule.crit_high:
             return _make_alert(
-                "threshold", "critical", asset, signal, value, rule.crit_high,
-                f"{signal} {value:.3g} above critical high {rule.crit_high:.3g}", rule.id,
+                "threshold",
+                "critical",
+                asset,
+                signal,
+                value,
+                rule.crit_high,
+                f"{signal} {value:.3g} above critical high {rule.crit_high:.3g}",
+                rule.id,
             )
         if rule.warn_low is not None and value < rule.warn_low:
             return _make_alert(
-                "threshold", "warning", asset, signal, value, rule.warn_low,
-                f"{signal} {value:.3g} below warning low {rule.warn_low:.3g}", rule.id,
+                "threshold",
+                "warning",
+                asset,
+                signal,
+                value,
+                rule.warn_low,
+                f"{signal} {value:.3g} below warning low {rule.warn_low:.3g}",
+                rule.id,
             )
         if rule.warn_high is not None and value > rule.warn_high:
             return _make_alert(
-                "threshold", "warning", asset, signal, value, rule.warn_high,
-                f"{signal} {value:.3g} above warning high {rule.warn_high:.3g}", rule.id,
+                "threshold",
+                "warning",
+                asset,
+                signal,
+                value,
+                rule.warn_high,
+                f"{signal} {value:.3g} above warning high {rule.warn_high:.3g}",
+                rule.id,
             )
         return None
 
@@ -150,8 +172,14 @@ class AlertDetector:
         z = abs(value - mean) / std
         if z > self._stat_zscore_threshold:
             return _make_alert(
-                "statistical", "warning", asset, signal, value, None,
-                f"{signal} z-score {z:.1f}σ (mean={mean:.3g}, std={std:.3g})", None,
+                "statistical",
+                "warning",
+                asset,
+                signal,
+                value,
+                None,
+                f"{signal} z-score {z:.1f}σ (mean={mean:.3g}, std={std:.3g})",
+                None,
             )
         return None
 
@@ -167,8 +195,14 @@ class AlertDetector:
             return None
         score = scorer.score(value)
         return _make_alert(
-            "ml", "warning", asset, signal, value, None,
-            f"{signal} ML anomaly score {score:.3f}", None,
+            "ml",
+            "warning",
+            asset,
+            signal,
+            value,
+            None,
+            f"{signal} ML anomaly score {score:.3f}",
+            None,
         )
 
 

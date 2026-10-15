@@ -1,0 +1,132 @@
+{
+  "started_at": "2026-10-15T12:30:28.914182+00:00",
+  "evidence_label": "Simulated",
+  "description": "Real local OPC UA traffic between separate Python processes; fictional equipment inputs",
+  "python": "3.13.5",
+  "platform": "Windows",
+  "packages": {
+    "asyncua": "1.1.8",
+    "paho-mqtt": "2.1.0",
+    "jsonschema": "4.26.0"
+  },
+  "source_sha256": {
+    "src/iiot_stack/opcua_adapter.py": "c06b8cf809c1a59191abdf58010e33e3452dd00e7bae5efd76a23a91ff8f79b8",
+    "src/iiot_stack/opcua_client.py": "07735cd467ac1325419d9d314e0194a9acf3d9d77a5cbd4c184ee76f8cc14edc",
+    "src/iiot_stack/opcua_demo.py": "f6f3cbd71bf670fba70c940e81c926ba38687a0018eb7971226fdbddbc55881e",
+    "src/iiot_stack/opcua_model.py": "9d553260f7c45435977542eb76ecbe1e7605d417b1dbe779d7a352e824dee626",
+    "src/iiot_stack/opcua_mqtt.py": "a3f8e62b95ce5ac9872444eaeb3747076fe704876295c7aa1d4ce1c38e6a7373",
+    "src/iiot_stack/opcua_server.py": "2d2b0a3a9edfbe61bb50791bb12624f45360906b4b620fc653e952895ab16db2"
+  },
+  "scenarios": {
+    "normal": {
+      "duration_seconds": 4,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 19,
+        "telemetry": 20,
+        "run_finished": 1
+      },
+      "payload_count": 20,
+      "acceptance": "PASS"
+    },
+    "steady": {
+      "duration_seconds": 12,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 18,
+        "telemetry": 60,
+        "run_finished": 1
+      },
+      "payload_count": 60,
+      "steady_temperature_source_timestamp_unchanged": true,
+      "acceptance": "PASS"
+    },
+    "frozen": {
+      "duration_seconds": 9,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 9,
+        "telemetry": 5,
+        "acquisition_stale": 1,
+        "run_finished": 1
+      },
+      "payload_count": 5,
+      "acceptance": "PASS"
+    },
+    "bad": {
+      "duration_seconds": 4,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 15,
+        "telemetry": 5,
+        "rejected": 3,
+        "run_finished": 1
+      },
+      "payload_count": 5,
+      "acceptance": "PASS"
+    },
+    "uncertain": {
+      "duration_seconds": 4,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 19,
+        "telemetry": 5,
+        "rejected": 3,
+        "run_finished": 1
+      },
+      "payload_count": 5,
+      "acceptance": "PASS"
+    },
+    "process-fault": {
+      "duration_seconds": 4,
+      "record_counts": {
+        "run_started": 1,
+        "browse": 6,
+        "initial_read": 6,
+        "connected": 1,
+        "observation": 19,
+        "telemetry": 20,
+        "run_finished": 1
+      },
+      "payload_count": 20,
+      "acceptance": "PASS"
+    }
+  },
+  "mqtt_database_dashboard": "NOT EXERCISED by this separate-process runner",
+  "finished_at": "2026-10-15T12:31:19.571509+00:00",
+  "artifacts_sha256": {
+    "bad-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bad-server.log": "68903148c39cbc065f8c661a4f273e8d0a9db2eb2db767a878f3234f5c949663",
+    "bad.jsonl": "c3532791f7e7e748f545959419ec0f5771624f904727c4e2376ffa13cd87228c",
+    "frozen-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frozen-server.log": "f1439ff4ceea9bcfd85a8f103f7735c352dbc9e8eb0296b1661e5cfd2519fafb",
+    "frozen.jsonl": "023f56cf67e2025afc6389f6300873e7aaf11207271ce7c3c3f905d9ebabb90c",
+    "normal-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "normal-server.log": "b22e84743bc2c48b60f5d1c9b35c08d948b1b0b34bdeaf8acaf80b1d7184f746",
+    "normal.jsonl": "7e9d9e89a26af093fdc41c2181d7c83e04be4997261d3b59ab280b42373ff31c",
+    "process-fault-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process-fault-server.log": "c34ef2ac4423ac1d57ed5d7bd6e9409f0d685e667fa3a1359e0d7ec8fe529407",
+    "process-fault.jsonl": "cbd17df74e33095e9ebf7729c7296de368c033b2cff1fc5ee94a3e576bf9cb56",
+    "steady-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "steady-server.log": "6a9028fcf20bd96fab5b241db352b63907fde74cd5a7350a350fd04722789d20",
+    "steady.jsonl": "ee47be26793d80314bf7709ef060f2427404690619a7ace91f3518f787476f95",
+    "uncertain-client.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "uncertain-server.log": "21814dfed550a0970e66de77c147c90feb299908f4abbc8dfd43ddcca0ef6c65",
+    "uncertain.jsonl": "98b34ee77a4c39cbbfb5e6fdd89e2b322b18714b4b2ccddf4bff64ad962c6eb1"
+  }
+}

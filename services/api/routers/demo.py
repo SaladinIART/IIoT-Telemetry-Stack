@@ -4,6 +4,7 @@ Proxies the request to the modbus_sim scenario API (port 5001).
 Used by the DemoControlPanel in the frontend to trigger scenario states
 during live presentations without needing direct access to the simulator.
 """
+
 from __future__ import annotations
 
 import os

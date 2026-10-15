@@ -3,7 +3,8 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
-from typing import Annotated, AsyncGenerator
+from collections.abc import AsyncGenerator
+from typing import Annotated
 
 import psycopg
 from fastapi import APIRouter, Depends
@@ -36,7 +37,7 @@ def _row_to_json(row: dict) -> str:
 
 async def _telemetry_generator(
     conn: psycopg.Connection,
-) -> AsyncGenerator[str, None]:
+) -> AsyncGenerator[str]:
     while True:
         try:
             with conn.cursor(row_factory=psycopg.rows.dict_row) as cur:
@@ -51,7 +52,7 @@ async def _telemetry_generator(
 
 async def _alerts_generator(
     conn: psycopg.Connection,
-) -> AsyncGenerator[str, None]:
+) -> AsyncGenerator[str]:
     while True:
         try:
             with conn.cursor(row_factory=psycopg.rows.dict_row) as cur:

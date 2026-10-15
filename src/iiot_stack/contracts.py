@@ -6,7 +6,6 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-
 # APP_ROOT lets Dockerfiles override the contracts location at runtime.
 # In dev (editable install): __file__ is 3 levels up from repo root via src/iiot_stack/.
 # When pip-installed: __file__ lands in site-packages — parents[2] is wrong,

@@ -1,5 +1,16 @@
 # Gemini Handoff
 
+## Current — canonical NEXUS / OPC UA batch, 15 October 2026
+
+- User explicitly authorized consolidation, direct Codex implementation and publication as one batch. Claude is not the implementer for this update.
+- Canonical checkout: `C:/Users/salbot01/Salbotics/IIoT-Telemetry-Stack`; GitHub `SaladinIART/IIoT-Telemetry-Stack`. NEXUS is its project name. Aluminium repository/checkouts remain preserved.
+- Read `docs/opcua/CONSOLIDATION_PLAN.md`, `OPCUA_GUIDE.md`, `CONDITION_ASSESSMENT.md` for current scope/status. Historical U01 dispatch is superseded for this batch.
+- Source `99f4404` was an ancestor of imported `fb430f5`; history fast-forwarded on `codex/nexus-opcua-consolidation`. No new Svelte work. Existing Python lint/format cleanup only outside the new extension.
+- Implemented typed read-only loopback server, browse/read/subscriptions, DataValue guards, acquisition-sequence freshness, reconnect and bounded MQTT bridge. Raw diagnostics stay separate from existing v2 schema. No physical data/commissioning, calibrated digital twin, production security or lossless/atomic-snapshot claim.
+- Six retained separate-process experiments pass. Local unit + OPC UA/MQTT tests pass. Full stack verification is configured in CI; local Docker unavailable. Do not claim a passing remote stack until its actual result is recorded in the report.
+- Wiki sources live in `docs/wiki/`; initialize wiki via browser once, then update its Git repository. About metadata should name NEXUS and OPC UA without production claims.
+- Model used: Codex, exact variant unavailable. Actual token expenditure unavailable; checkpoint estimates are in the master list.
+
 ## B08 review - 15 October 2026
 
 B08 offline component baseline accepted: 35 tests and retained probe reproduced. See docs/career-readiness/b08/B08_REVIEW.md. End-to-end stack unverified; no source fix. User competency NOT ASSESSED.

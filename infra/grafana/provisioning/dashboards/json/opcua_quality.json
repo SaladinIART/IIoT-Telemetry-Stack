@@ -1,0 +1,39 @@
+{
+  "uid": "nexus-opcua",
+  "title": "NEXUS OPC UA — accepted-data health",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5s",
+  "time": {"from": "now-15m", "to": "now"},
+  "tags": ["nexus", "opcua", "simulated"],
+  "panels": [
+    {
+      "id": 1,
+      "title": "Simulated billet temperature (last accepted value)",
+      "type": "stat",
+      "datasource": {"type": "postgres", "uid": "iiot-timescaledb"},
+      "gridPos": {"h": 6, "w": 8, "x": 0, "y": 0},
+      "fieldConfig": {"defaults": {"unit": "celsius", "decimals": 2}},
+      "targets": [{"refId": "A", "format": "table", "rawSql": "SELECT value FROM telemetry WHERE asset='furnace-01' AND signal='billet_temp_c' ORDER BY ts DESC LIMIT 1"}]
+    },
+    {
+      "id": 2,
+      "title": "Seconds since last accepted delivery (not source value age)",
+      "description": "Rises when acquisition, OPC UA, MQTT or ingestion stops. Consult collector JSONL to distinguish causes. An old SourceTimestamp can be valid for an unchanged reading.",
+      "type": "stat",
+      "datasource": {"type": "postgres", "uid": "iiot-timescaledb"},
+      "gridPos": {"h": 6, "w": 8, "x": 8, "y": 0},
+      "fieldConfig": {"defaults": {"unit": "s", "noValue": "NO ACCEPTED DATA", "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "yellow", "value": 5}, {"color": "red", "value": 10}]}}},
+      "options": {"colorMode": "background"},
+      "targets": [{"refId": "A", "format": "table", "rawSql": "SELECT extract(epoch FROM now()-max(ts)) AS seconds FROM telemetry WHERE asset='furnace-01' AND signal='billet_temp_c'"}]
+    },
+    {
+      "id": 3,
+      "title": "Equipment state (independent of source quality)",
+      "type": "stat",
+      "datasource": {"type": "postgres", "uid": "iiot-timescaledb"},
+      "gridPos": {"h": 6, "w": 8, "x": 16, "y": 0},
+      "targets": [{"refId": "A", "format": "table", "rawSql": "SELECT state FROM telemetry WHERE asset='furnace-01' AND signal='billet_temp_c' ORDER BY ts DESC LIMIT 1"}]
+    }
+  ]
+}

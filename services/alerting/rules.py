@@ -76,5 +76,7 @@ class RuleLoader:
             LOG.info("rules reloaded", extra={"event": {"count": len(self._rules)}})
         except Exception as exc:
             # Keep stale rules — better to alert on old thresholds than to stop alerting
-            LOG.warning("rule reload failed, keeping stale rules", extra={"event": {"error": str(exc)}})
+            LOG.warning(
+                "rule reload failed, keeping stale rules", extra={"event": {"error": str(exc)}}
+            )
             self._last_load = time.time()

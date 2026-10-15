@@ -143,9 +143,9 @@ If they want to go deeper, pick from these:
 | Question | Answer (one sentence + pointer) |
 |---|---|
 | "Is this production-ready?" | Demo-ready + architecturally production-shaped; gaps (TLS on MQTT, Vault secrets, load tests) are listed in `WINDOWS_DEMO.md` FAQ, not hidden. |
-| "Why did you build this?" | To bridge the OT-IT gap I hit at Alumac Industries — power monitoring across 17 machines with no proper data layer. This is how it should have been done. |
+| "Why did you build this?" | To practise the OT/IT integration loop independently: simulated equipment, structured acquisition, monitoring and evidence-led assessment. |
 | "What's the hardest part you built?" | The 3-layer alert deduplication: preventing duplicate alerts when all three detectors fire on the same signal simultaneously. See `services/alerting/`. |
-| "Could you add OPC-UA?" | Yes — collector service is the only thing that changes. FastAPI, MQTT, TimescaleDB, frontend — all OPC-UA agnostic. |
+| "Could you add OPC UA?" | The canonical NEXUS repository now includes a read-only local extension; use the current OPC UA guide/report to show exactly which paths were verified. |
 | "What would you change first if this went to production?" | TLS on Mosquitto + mTLS for collector auth. Currently the MQTT ACL is username/password only; for a real factory VLAN that's acceptable but not ideal. |
 | "Why Python and not Go?" | FastAPI + pydantic gives auto-generated OpenAPI docs and type-safe contracts for free; the performance ceiling for this data volume (1 sample/s per asset, 7 assets) is nowhere near the point where Go's throughput matters. |
 | "Have you deployed this to cloud?" | Not yet — intentionally self-contained (no cloud dependency by design). The Helm chart is ready for a K8s cluster (EKS, AKS, GKE) when the use case justifies it. |

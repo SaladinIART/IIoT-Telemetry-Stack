@@ -1,0 +1,14 @@
+# Opt-in replacement for the Modbus collector: one publisher for furnace-01.
+# UA server/client share a container and communicate via actual loopback TCP.
+# No unsecured OPC UA port is exposed to the host or LAN.
+services:
+  collector:
+    build:
+      context: .
+      dockerfile: services/opcua_demo/Dockerfile
+    environment:
+      OPCUA_SCENARIO: ${OPCUA_SCENARIO:-normal}
+    volumes:
+      - opcua_evidence:/evidence
+volumes:
+  opcua_evidence:

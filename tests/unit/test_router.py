@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import queue
 import time
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 from services.alerting.router import AlertRouter, _value_in_bounds
 from services.alerting.rules import AlertRule, RuleLoader
@@ -56,6 +56,7 @@ def _mock_cursor_returning(alert_id: str = "abc-123") -> MagicMock:
 
 
 # ── deduplication ────────────────────────────────────────────────────────────
+
 
 def test_dedup_suppresses_second_alert_within_window() -> None:
     router, q = _make_router(dedup_window_sec=300.0)
@@ -125,11 +126,16 @@ def test_dedup_different_alert_type_not_suppressed() -> None:
 
 # ── _value_in_bounds ─────────────────────────────────────────────────────────
 
+
 def _rule(**kwargs) -> AlertRule:
     defaults = dict(
         id="00000000-0000-0000-0000-000000000001",
-        asset="pump-01", signal="temp",
-        warn_low=None, warn_high=None, crit_low=None, crit_high=None,
+        asset="pump-01",
+        signal="temp",
+        warn_low=None,
+        warn_high=None,
+        crit_low=None,
+        crit_high=None,
     )
     return AlertRule(**{**defaults, **kwargs})
 

@@ -109,7 +109,7 @@ class AlertRouter:
                 # Close threshold alerts whose value has returned to bounds
                 cur.execute(_FETCH_OPEN_THRESHOLD_SQL)
                 open_alerts = cur.fetchall()
-                for (alert_id, asset, signal) in open_alerts:
+                for alert_id, asset, signal in open_alerts:
                     cur.execute(_LATEST_VALUE_SQL, (asset, signal))
                     row = cur.fetchone()
                     if row is None:
@@ -138,8 +138,13 @@ class AlertRouter:
         if now - self._dedup.get(key, 0.0) < self._dedup_window_sec:
             LOG.debug(
                 "alert deduped",
-                extra={"event": {"asset": alert["asset"], "signal": alert["signal"],
-                                 "type": alert["alert_type"]}},
+                extra={
+                    "event": {
+                        "asset": alert["asset"],
+                        "signal": alert["signal"],
+                        "type": alert["alert_type"],
+                    }
+                },
             )
             return
 
@@ -170,31 +175,26 @@ class AlertRouter:
 
         LOG.info(
             "alert inserted",
-            extra={"event": {
-                "id": alert_id,
-                "asset": alert["asset"],
-                "signal": alert["signal"],
-                "type": alert["alert_type"],
-                "severity": alert["severity"],
-                "value": alert["value"],
-            }},
+            extra={
+                "event": {
+                    "id": alert_id,
+                    "asset": alert["asset"],
+                    "signal": alert["signal"],
+                    "type": alert["alert_type"],
+                    "severity": alert["severity"],
+                    "value": alert["value"],
+                }
+            },
         )
         self._publish_mqtt(alert, alert_id, opened_at)
         if self._webhook_url:
             self._post_webhook(alert, alert_id)
 
-    def _publish_mqtt(
-        self, alert: dict[str, Any], alert_id: str, opened_at: Any
-    ) -> None:
-        topic = (
-            f"iiot/v1/alerts/{alert['site']}/{alert['line_name']}"
-            f"/{alert['asset']}/{alert_id}"
-        )
+    def _publish_mqtt(self, alert: dict[str, Any], alert_id: str, opened_at: Any) -> None:
+        topic = f"iiot/v1/alerts/{alert['site']}/{alert['line_name']}/{alert['asset']}/{alert_id}"
         ts_ms = int(time.time() * 1000)
         opened_ts_ms = (
-            int(opened_at.timestamp() * 1000)
-            if hasattr(opened_at, "timestamp")
-            else ts_ms
+            int(opened_at.timestamp() * 1000) if hasattr(opened_at, "timestamp") else ts_ms
         )
         payload = {
             "v": 1,
@@ -226,12 +226,14 @@ class AlertRouter:
             LOG.warning("mqtt publish failed", extra={"event": {"error": str(exc)}})
 
     def _post_webhook(self, alert: dict[str, Any], alert_id: str) -> None:
-        body = json.dumps({
-            "text": (
-                f"[{alert['severity'].upper()}] {alert['asset']} — {alert['signal']}: "
-                f"{alert['message']} (id={alert_id[:8]})"
-            )
-        }).encode("utf-8")
+        body = json.dumps(
+            {
+                "text": (
+                    f"[{alert['severity'].upper()}] {alert['asset']} — {alert['signal']}: "
+                    f"{alert['message']} (id={alert_id[:8]})"
+                )
+            }
+        ).encode("utf-8")
         req = Request(
             self._webhook_url,
             data=body,
@@ -290,11 +292,16 @@ def run() -> None:
     mqtt_client.on_message = detector.on_message
     mqtt_client.subscribe([("iiot/v1/telemetry/+/+/+/+", 1)])
 
-    LOG.info("alerting service started", extra={"event": {
-        "dedup_window_sec": settings.dedup_window_sec,
-        "stat_window": settings.stat_window_size,
-        "ml_min_samples": settings.ml_min_samples,
-    }})
+    LOG.info(
+        "alerting service started",
+        extra={
+            "event": {
+                "dedup_window_sec": settings.dedup_window_sec,
+                "stat_window": settings.stat_window_size,
+                "ml_min_samples": settings.ml_min_samples,
+            }
+        },
+    )
 
     while True:
         try:

@@ -19,7 +19,6 @@ from iiot_stack.telemetry import (
     payload_bytes,
 )
 
-
 LOG = logging.getLogger("collector")
 
 
@@ -35,7 +34,9 @@ def connect_mqtt(settings: CollectorSettings) -> mqtt.Client:
     return client
 
 
-def publish_status(client: mqtt.Client, settings: CollectorSettings, asset_id: str, quality: str, seq: int) -> None:
+def publish_status(
+    client: mqtt.Client, settings: CollectorSettings, asset_id: str, quality: str, seq: int
+) -> None:
     topic = build_event_topic(settings.site, settings.line, asset_id, "status")
     payload = build_event_payload(
         asset=asset_id,
@@ -67,7 +68,9 @@ def run() -> None:
                 raise RuntimeError("modbus connect failed")
 
             for asset in assets:
-                poll_interval_seconds = asset.get("poll_interval_ms", settings.default_poll_interval_ms) / 1000.0
+                poll_interval_seconds = (
+                    asset.get("poll_interval_ms", settings.default_poll_interval_ms) / 1000.0
+                )
                 signal_values: dict[str, float] = {}
                 source_ts = int(time.time() * 1000)
 
@@ -78,16 +81,24 @@ def run() -> None:
                         slave=asset["unit_id"],
                     )
                     if result.isError():
-                        raise RuntimeError(f"modbus read error for {asset['asset_id']} {signal['tag_id']}: {result}")
+                        raise RuntimeError(
+                            f"modbus read error for {asset['asset_id']} {signal['tag_id']}: {result}"
+                        )
 
-                    raw_value = decode_words(result.registers, signal["datatype"], signal["endianness"])
-                    signal_values[signal["tag_id"]] = apply_scaling(raw_value, signal["scale"], signal["offset"])
+                    raw_value = decode_words(
+                        result.registers, signal["datatype"], signal["endianness"]
+                    )
+                    signal_values[signal["tag_id"]] = apply_scaling(
+                        raw_value, signal["scale"], signal["offset"]
+                    )
 
                 state_code = int(signal_values["state_code"])
                 fault_code = int(signal_values["fault_code"])
                 state = state_name(asset, state_code)
                 fault_label = fault_name(asset, fault_code)
-                quality = "bad" if state == "FAULTED" else "stale" if state == "MAINTENANCE" else "good"
+                quality = (
+                    "bad" if state == "FAULTED" else "stale" if state == "MAINTENANCE" else "good"
+                )
                 last_state = asset_state_cache.get(asset["asset_id"])
 
                 if last_state != (state, fault_code):
@@ -96,7 +107,11 @@ def run() -> None:
                         event_type = "alarm_cleared"
                     if state == "MAINTENANCE":
                         event_type = "maintenance_started"
-                    elif last_state is not None and last_state[0] == "MAINTENANCE" and state != "MAINTENANCE":
+                    elif (
+                        last_state is not None
+                        and last_state[0] == "MAINTENANCE"
+                        and state != "MAINTENANCE"
+                    ):
                         event_type = "maintenance_ended"
 
                     event_payload = build_event_payload(
@@ -111,7 +126,9 @@ def run() -> None:
                         reason_code=fault_label,
                     )
                     mqtt_client.publish(
-                        build_event_topic(settings.site, settings.line, asset["asset_id"], event_type),
+                        build_event_topic(
+                            settings.site, settings.line, asset["asset_id"], event_type
+                        ),
                         payload=payload_bytes(event_payload),
                         qos=1,
                         retain=True,
@@ -121,7 +138,9 @@ def run() -> None:
 
                 for signal in asset["signals"]:
                     tag_id = signal["tag_id"]
-                    topic = build_telemetry_topic(settings.site, settings.line, asset["asset_id"], tag_id)
+                    topic = build_telemetry_topic(
+                        settings.site, settings.line, asset["asset_id"], tag_id
+                    )
                     payload = build_payload(
                         asset=asset["asset_id"],
                         signal=tag_id,
